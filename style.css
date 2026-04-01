@@ -7,6 +7,7 @@ dark blue: #00183b
 blue: #2e45cc
 magenta: #eb54c5
 white: #f8f9fa
+gray: #dedede
 
 */
 
@@ -68,7 +69,8 @@ header a:hover{
 }
 
 .section{
-	padding: 20px;
+	padding: 20px;	
+	scroll-margin-top: 74px;
 }
 
 .section-title{
@@ -76,10 +78,36 @@ header a:hover{
 	color: #2e45cc;
 }
 
-.social-container{
+/* Portfolio */
+.project-container{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.project{
+	width: 300px;
+	height: 150px;	
+	border-radius: 15px;
+	background-color: #dedede;
+	
 	display: flex;
 	justify-content: center;
+	align-items: center;
+}
+
+.project-link{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #00183b;
+}
+
+/* Socials */
+.social-container{
 	padding: 40px 0px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 35px;
 }
 
 .social-link{
@@ -94,6 +122,14 @@ header a:hover{
 
 .social-link:hover{
 	background: linear-gradient(90deg, #2e45cc 0%, #eb54c5 100%);
+}
+
+.social-link:active{
+	background: #eb54c5;
+}
+
+.bi{
+	margin-right: 7px;
 }
 
 /* Footer */
