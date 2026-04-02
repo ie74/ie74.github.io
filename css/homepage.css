@@ -27,9 +27,12 @@ white: #f8f9fa
 }
 
 /* Portfolio */
-.project-container{
+.projects-container{
+	padding: 30px;
 	display: flex;
+	justify-content: center;
 	flex-wrap: wrap;
+	gap: 30px;
 }
 
 .project-link{
