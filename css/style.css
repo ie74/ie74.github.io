@@ -28,6 +28,7 @@ html{
 /* Header */
 header{
 	height: 74px;
+	padding: 0px 25px;
 	background-color: #00183b;
 	
 	display: flex;
@@ -37,18 +38,15 @@ header{
 	position: sticky;
 	top: 0;
 	left: 0;
+	z-index: 74;
 }
 
-.home-link{
-	margin-left: 25px;
-}
-
-.header-links{
-	margin-right: 25px;
+.header-links ul{
 	list-style: none;
 	
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 	gap: 15px;
 }
 
@@ -62,12 +60,43 @@ header a:hover{
 	text-decoration: underline;
 }
 
+.header-menu-btn{
+	background-color: #00183b;
+	color: #f8f9fa;
+	outline: none;
+	border: none;
+	font-size: 22px;
+	cursor: pointer;
+
+	display: none;
+}
+
+/* Main */
+.container{
+	width: 90%;
+	margin: 0px auto;
+}
+
+.section{
+	padding: 20px;	
+	scroll-margin-top: 74px;
+}
+
+.section-title{
+	text-align: center;
+	color: #2e45cc;
+}
+
 /* Footer */
 footer{
 	padding: 50px;
 	background-color: #00183b;
 	color: #f8f9fa;
 	text-align: center;
+}
+
+footer a{
+	color: #f8f9fa;
 }
 
 .footer-copyright{
@@ -78,6 +107,51 @@ footer{
 	list-style: none;
 }
 
-.footer-link a{
-	color: #f8f9fa;
+.footer-link{
+	margin-bottom: 10px;
+}
+
+.footer-sub-links {
+	width: 100%;
+
+	display: flex;
+	justify-content: center;
+}
+
+.footer-sub-links ul{
+	list-style: none;
+	display: flex;
+	gap: 10px;
+}
+
+.footer-sub-links a{
+	font-size: 12px;
+}
+
+/* Responsive Navbar */
+@media (max-width: 800px){
+	.header-links{
+		display: none;
+	}
+
+	.header-links.active{
+		width: 100%;
+		background-color: #00183b;
+
+		position: absolute;
+		top: 74px;
+		left: 0;
+		
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.header-links.active ul{
+		padding: 0px 20px 20px 20px;
+	}
+
+	.header-menu-btn{
+		display: block;
+	}	
 }
