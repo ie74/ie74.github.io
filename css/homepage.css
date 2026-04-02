@@ -1,0 +1,82 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Colors
+
+dark blue: #00183b
+blue: #2e45cc
+magenta: #eb54c5
+white: #f8f9fa
+gray: #dedede
+
+*/
+
+/* Main */
+.container{
+	width: 85%;
+	margin: 0px auto;
+}
+
+.section{
+	padding: 20px;	
+	scroll-margin-top: 74px;
+}
+
+.section-title{
+	text-align: center;
+	color: #2e45cc;
+}
+
+/* Portfolio */
+.project-container{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.project{
+	width: 300px;
+	height: 150px;	
+	border-radius: 15px;
+	background-color: #dedede;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.project-link{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #00183b;
+}
+
+/* Socials */
+.social-container{
+	padding: 40px 0px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 35px;
+}
+
+.social-link{
+	padding: 10px 20px;
+	border-radius: 20px;
+	color: #f8f9fa;
+	background-color: #2e45cc;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 500;
+}
+
+.social-link:hover{
+	background: linear-gradient(90deg, #2e45cc 0%, #eb54c5 100%);
+}
+
+.social-link:active{
+	background: #eb54c5;
+}
+
+.bi{
+	margin-right: 7px;
+}

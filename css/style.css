@@ -1,0 +1,83 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Colors
+
+dark blue: #00183b
+blue: #2e45cc
+magenta: #eb54c5
+white: #f8f9fa
+gray: #dedede
+
+*/
+
+/* CSS Reset */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	max-width: 100%;
+}
+
+html{
+	height: 100dvh;
+	font-family: "Montserrat", sans-serif;
+	background-color: #f8f9fa;
+}
+
+/* Header */
+header{
+	height: 74px;
+	background-color: #00183b;
+	
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+	position: sticky;
+	top: 0;
+	left: 0;
+}
+
+.home-link{
+	margin-left: 25px;
+}
+
+.header-links{
+	margin-right: 25px;
+	list-style: none;
+	
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+}
+
+header a{
+	text-decoration: none;
+	color: #f8f9fa;
+	font-size: 18px;
+}
+
+header a:hover{
+	text-decoration: underline;
+}
+
+/* Footer */
+footer{
+	padding: 50px;
+	background-color: #00183b;
+	color: #f8f9fa;
+	text-align: center;
+}
+
+.footer-copyright{
+	margin-bottom: 20px;
+}
+
+.footer-links{
+	list-style: none;
+}
+
+.footer-link a{
+	color: #f8f9fa;
+}
