@@ -6,11 +6,11 @@
 dark blue: #00183b
 blue: #2e45cc
 magenta: #eb54c5
-white: #f8f9fa
+dark-white: #f8f9fa
 
 */
 
-/* Portfolio */
+/* Playground */
 .projects-container{
 	padding: 30px 0px;
 	display: flex;
@@ -23,13 +23,31 @@ white: #f8f9fa
 	width: 300px;
 	height: 150px;	
 	border-radius: 15px;
-	background-color: #ffffff;
 	box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
 	
+	background-size: cover;
+	background-position: 50% 50%;
+
+	font-size: 22px;
 	text-decoration: none;
 	text-transform: uppercase;
-	color: #00183b;
-	
+	color: #f8f9fa;
+	overflow: hidden;
+}
+
+#photography-link{
+	background-image: url("../photos/IMG20251026150136.jpg");
+}
+
+#d3-link{
+	background-image: url("../photos/Render\ Last.jpg");
+}
+
+.project-link span{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.3);
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
