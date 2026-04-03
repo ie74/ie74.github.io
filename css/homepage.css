@@ -11,14 +11,6 @@ dark-white: #f8f9fa
 */
 
 /* Playground */
-.projects-container{
-	padding: 30px 0px;
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	gap: 30px;
-}
-
 .project-link{
 	width: 300px;
 	height: 150px;	
@@ -58,14 +50,6 @@ dark-white: #f8f9fa
 }
 
 /* Socials */
-.social-container{
-	padding: 40px 0px;
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	gap: 35px;
-}
-
 .social-link{
 	padding: 10px 20px;
 	border-radius: 20px;
