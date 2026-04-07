@@ -7,7 +7,6 @@ dark blue: #00183b
 blue: #2e45cc
 magenta: #eb54c5
 dark-white: #f8f9fa
-50% gray: #888888
 
 */
 
@@ -24,6 +23,16 @@ dark-white: #f8f9fa
 .img-desc{
 	width: 100%;
 	padding: 5px;
-	background-color: #888888;
+	background-color: rgba(0, 0, 0, 0.5);
 	color: #f8f9fa;
+
+	position: absolute;
+	bottom: 4px;
+	left: 0;
+
+	display: none;
+}
+
+.img-container:hover .img-desc{
+	display: block;
 }
