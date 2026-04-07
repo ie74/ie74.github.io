@@ -18,15 +18,3 @@ headerMenuBtn.addEventListener("click", () => {
         headerMenuBtnIcon.classList.add("bi-x-lg");
     }
 });
-
-//Load photos
-fetch("../json/photos.json").then(response => {
-    return response.json();
-}).then(data => {
-    data.forEach(photo => {
-        gallery.innerHTML += `<div class="img-container">
-							        <img src="../${photo.path}" alt="image" class="gallery-img">
-							        <p class="img-desc">${photo.desc}</p>
-						        </div>`
-    });
-})
