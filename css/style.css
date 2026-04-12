@@ -7,6 +7,7 @@ dark blue: #00183b
 blue: #2e45cc
 magenta: #eb54c5
 dark-white: #f8f9fa
+black: #1c1c1c
 
 */
 
@@ -22,6 +23,7 @@ html{
 	height: 100dvh;
 	font-family: "Montserrat", sans-serif;
 	background-color: #f8f9fa;
+    color: #1c1c1c;
 }
 
 /* Header */

@@ -1,0 +1,59 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Colors
+
+dark blue: #00183b
+blue: #2e45cc
+magenta: #eb54c5
+dark-white: #f8f9fa
+black: #1c1c1c
+
+*/
+
+.project{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.project-info{
+    width: 500px;
+}
+
+.project-title{
+    width: 100%;
+    color: #1c1c1c;
+    margin-bottom: 20px;
+}
+
+.carousel-imgs img{
+    width: 500px;
+    display: none;
+}
+
+.carousel-imgs .active{
+    display: block;
+}
+
+.carousel-dots{
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.carousel-dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.carousel-dot.active{
+    background-color: #888;
+}
