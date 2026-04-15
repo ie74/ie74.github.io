@@ -43,7 +43,7 @@
 
 					<div class="section-container">
 
-						<div class="project">
+						<div class="project" id="donut">
 							<div class="project-info">
 								<h2 class="project-title">Donut</h2>
 								<p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis reiciendis sint commodi explicabo dolores neque aspernatur eos minus earum quo voluptatum, officia odit voluptatem, inventore possimus iste, delectus id tempora fuga aperiam error vero? Nulla, possimus assumenda asperiores harum fugiat eveniet facere ratione ut explicabo eos est, suscipit nihil voluptates?</p>
@@ -58,7 +58,7 @@
 							</div>
 						</div>
 
-						<div class="project">
+						<div class="project" id="ring">
 							<div class="project-info">
 								<h2 class="project-title">Ring</h2>
 								<p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis reiciendis sint commodi explicabo dolores neque aspernatur eos minus earum quo voluptatum, officia odit voluptatem, inventore possimus iste, delectus id tempora fuga aperiam error vero? Nulla, possimus assumenda asperiores harum fugiat eveniet facere ratione ut explicabo eos est, suscipit nihil voluptates?</p>
@@ -70,12 +70,16 @@
 									<img src="../photos/Render006.png">
 									<img src="../photos/Render007.png">
 								</div>
-								<div class="carousel-dots">
-									<div class="carousel-dot active"></div>
-									<div class="carousel-dot"></div>
-									<div class="carousel-dot"></div>
-									<div class="carousel-dot"></div>
-								</div>
+								<div class="carousel-controls">
+									<i class="bi bi-caret-left-square-fill carousel-btn" id="prev"></i>
+									<div class="carousel-dots">
+										<div class="carousel-dot active" onclick="goTo('ring', 0);"></div>
+										<div class="carousel-dot" onclick="goTo('ring', 1);"></div>
+										<div class="carousel-dot" onclick="goTo('ring', 2);"></div>
+										<div class="carousel-dot" onclick="goTo('ring', 3);"></div>
+									</div>
+									<i class="bi bi-caret-right-square-fill carousel-btn" id="next"></i>
+								</div>								
 							</div>
 						</div>
 

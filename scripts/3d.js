@@ -1,17 +1,41 @@
 // Carousels
-const carousels = document.querySelectorAll(".project-carousel");
+const projects = document.querySelectorAll(".project");
+let active = [];
 
-carousels.forEach(carousel => {
-    const images = carousel.querySelectorAll(".carousel-imgs img");
-    const dots = carousel.querySelectorAll(".carousel-dot");
+projects.forEach(project => {
+	active.push({
+		id: project.id,
+		idx: 0
+	});
+});
 
-    dots.forEach((dot, i) => {
-        dot.addEventListener("click", () => {
-            dots.forEach(d => {d.classList.remove("active")});
-            images.forEach(img => {img.classList.remove("active")});
+function goTo(projectID, i){
+	const carousel = document.getElementById(projectID).querySelector(".project-carousel");
+	const images = carousel.querySelectorAll(".carousel-imgs img");
+	const dots = carousel.querySelectorAll(".carousel-dot");
+	
+	images.forEach(img => {
+		img.classList.remove("active");
+	});
+	
+	dots.forEach(dot => {
+		dot.classList.remove("active");
+	});
+	
+	images[i].classList.add("active");
+	dots[i].classList.add("active");
+	
+	active.forEach(data => {
+		if(data.id == projectID){
+			data.idx = i;
+		}
+	})
+}
 
-            dot.classList.add("active");
-            images[i].classList.add("active");
-        })
-    })
-})
+function next(projectID){
+
+}
+
+function prev(projectID){
+
+}
