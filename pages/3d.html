@@ -52,8 +52,12 @@
 								<div class="carousel-imgs">
 									<img src="../photos/Render Last.jpg" class="active">
 								</div>
-								<div class="carousel-dots">
-									<div class="carousel-dot active"></div>
+								<div class="carousel-controls">
+									<i class="bi bi-caret-left-square-fill carousel-btn"></i>
+									<div class="carousel-dots">
+										<div class="carousel-dot active"></div>
+									</div>
+									<i class="bi bi-caret-right-square-fill carousel-btn"></i>
 								</div>
 							</div>
 						</div>
@@ -71,14 +75,14 @@
 									<img src="../photos/Render007.png">
 								</div>
 								<div class="carousel-controls">
-									<i class="bi bi-caret-left-square-fill carousel-btn" id="prev"></i>
+									<i class="bi bi-caret-left-square-fill carousel-btn clickable" onclick="prev('ring');"></i>
 									<div class="carousel-dots">
 										<div class="carousel-dot active" onclick="goTo('ring', 0);"></div>
 										<div class="carousel-dot" onclick="goTo('ring', 1);"></div>
 										<div class="carousel-dot" onclick="goTo('ring', 2);"></div>
 										<div class="carousel-dot" onclick="goTo('ring', 3);"></div>
 									</div>
-									<i class="bi bi-caret-right-square-fill carousel-btn" id="next"></i>
+									<i class="bi bi-caret-right-square-fill carousel-btn clickable" onclick="next('ring');"></i>
 								</div>								
 							</div>
 						</div>

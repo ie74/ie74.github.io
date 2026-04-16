@@ -48,9 +48,18 @@ black: #1c1c1c
 }
 
 .carousel-btn{
+	color: #cccccc;
+	cursor: not-allowed;
+	font-size: 32px;
+}
+
+.carousel-btn.clickable{
 	color: #2e45cc;
 	cursor: pointer;
-	font-size: 32px;
+}
+
+.carousel-btn.clickable:hover{
+	color: #eb54c5;
 }
 
 .carousel-dots{

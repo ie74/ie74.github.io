@@ -1,11 +1,14 @@
 // Carousels
-const projects = document.querySelectorAll(".project");
-let active = [];
+const projectElements = document.querySelectorAll(".project");
+let projects = [];
 
-projects.forEach(project => {
-	active.push({
+projectElements.forEach(project => {
+	const images = project.querySelectorAll(".carousel-imgs img");
+	
+	projects.push({
 		id: project.id,
-		idx: 0
+		activeIdx: 0,
+		imgN: images.length
 	});
 });
 
@@ -25,17 +28,37 @@ function goTo(projectID, i){
 	images[i].classList.add("active");
 	dots[i].classList.add("active");
 	
-	active.forEach(data => {
-		if(data.id == projectID){
-			data.idx = i;
+	projects.forEach(project => {
+		if(project.id == projectID){
+			project.activeIdx = i;
 		}
-	})
+	});
 }
 
 function next(projectID){
-
+	projects.forEach(project => {
+		if(project.id == projectID){
+			if(project.activeIdx < project.imgN-1){
+				project.activeIdx += 1;
+				goTo(projectID, project.activeIdx);
+			}else{
+				project.activeIdx = 0;
+				goTo(projectID, 0);
+			}
+		}
+	});	
 }
 
 function prev(projectID){
-
+	projects.forEach(project => {
+		if(project.id == projectID){
+			if(project.activeIdx > 0){
+				project.activeIdx -= 1;
+				goTo(projectID, project.activeIdx);
+			}else{
+				project.activeIdx = project.imgN-1;
+				goTo(projectID, project.activeIdx);
+			}
+		}
+	});	
 }
