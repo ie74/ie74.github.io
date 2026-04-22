@@ -22,15 +22,14 @@ black: #1c1c1c
 html{
 	height: 100dvh;
 	font-family: "Montserrat", sans-serif;
-	background-color: #f8f9fa;
-    color: #1c1c1c;
+	background: linear-gradient(135deg,rgba(31, 46, 78, 1) 0%, rgba(28, 36, 49, 1) 50%, rgba(0, 0, 0, 1) 100%);
+    color: #e2e8ee;
 }
 
 /* Header */
 header{
 	height: 74px;
 	padding: 0px 25px;
-	background-color: #00183b;
 	
 	display: flex;
 	justify-content: space-between;
@@ -52,18 +51,23 @@ header{
 }
 
 header a{
+	background: linear-gradient(270deg,rgba(226, 232, 238, 0.3) 0%, rgba(189, 193, 199, 0.3) 100%);
+	padding: 7px 13px;
+	border: 1px solid rgba(226, 232, 238, 0.4);
+	border-radius: 17px;
 	text-decoration: none;
-	color: #f8f9fa;
+	color: #e2e8ee;
 	font-size: 18px;
+	box-shadow: 0px 0px 10px 3px rgba(226, 232, 238, 0.2) inset;
 }
 
 header a:hover{
-	text-decoration: underline;
+	transform: scale(5);
 }
 
 .header-menu-btn{
 	background-color: #00183b;
-	color: #f8f9fa;
+	color: #e2e8ee;
 	outline: none;
 	border: none;
 	font-size: 22px;
@@ -85,7 +89,7 @@ header a:hover{
 
 .section-title{
 	text-align: center;
-	color: #2e45cc;
+	color: #0b59ed;
 }
 
 .section-container{
