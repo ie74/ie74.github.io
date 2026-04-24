@@ -2,18 +2,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Colors */
-:root{
-	--white: #E2E8EE;
+:root {
+	--white: #2C2318;
 	--gold: #B5832E;
 	--gold-glow: #E8A830;
-	--azure: #41619A;
-	--gradient-blue: #1F2E4E;
-	--gradient-gray: #1C2431;
-	--gradient-black: #0F1116;
+	--azure: #7A6A4F;
+	--gradient-blue: #F5F0E8;
+	--gradient-gray: #EDE7D9;
+	--gradient-black: #D4C9B4;
 
-	--gray-border: #1C2431CE;
-	--gray-bg: #1C2431A8;
-	--gray-shadow: #1C243167;
+	--gray-border: #EDE7D9CE;
+	--gray-bg: #EDE7D9A8;
+	--gray-shadow: #EDE7D967;
+}
+
+/* Dark automatico dal sistema */
+@media (prefers-color-scheme: dark) {
+	:root {
+		--white: #E2E8EE;
+		--azure: #41619A;
+		--gradient-blue: #1F2E4E;
+		--gradient-gray: #1C2431;
+		--gradient-black: #0F1116;
+
+		--gray-border: #1C2431CE;
+		--gray-bg: #1C2431A8;
+		--gray-shadow: #1C243167;
+	}
 }
 
 /* CSS Reset */
