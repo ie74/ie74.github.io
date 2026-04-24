@@ -9,9 +9,6 @@ GRAY: #1C2431
 BLACK: #0F1116
 
 BLACK-OVERLAY: #0F111667
-WHITE-20%: #E2E8EE33
-WHITE-30%: #E2E8EE4D
-WHITE-40%: #E2E8EE66
 */
 
 /* CSS Reset */
@@ -31,13 +28,9 @@ html{
 }
 
 /* Header */
-header{
-	height: 74px;
-	padding: 0px 25px;
-	
+header{	
 	display: flex;
 	justify-content: center;
-	align-items: center;
 	
 	position: sticky;
 	top: 0;
@@ -46,14 +39,26 @@ header{
 }
 
 .header-links{
-	padding: 10px;
-	border-radius: 28px;
-
+	width: 100%;
+	padding: 8px;
 	background-color: #1C2431a8;
-	border: 1px solid #1C2431ce;
+	border-bottom: 1px solid #1C2431ce;
 	box-shadow: 0px 0px 10px 2px #1C243167 inset;
 	backdrop-filter: blur(10px);
 	-webkit-backdrop-filter: blur(10px);
+	
+	transition:
+		width 0.3s ease,
+		height 0.3s ease,
+		margin 0.3s ease,
+		border-radius 0.3s ease;
+}
+
+.header-links.scroll{
+	width: auto;
+	margin-top: 8px;
+	border-radius: 28px;
+	border: 1px solid #1C2431ce;
 }
 
 .header-links ul{
@@ -62,17 +67,13 @@ header{
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	gap: 10px;
+	gap: 8px;
 }
 
 header a{
 	display: inline-block;
 	padding: 5px 10px;
-	font-size: 15px;	
-
-	background-color: #E2E8EE4D;
-	border: 1px solid #E2E8EE66;
-	box-shadow: 0px 0px 10px 3px #E2E8EE33 inset;
+	font-size: 15px;
 
 	border-radius: 18px;
 	color: #E2E8EE;
@@ -85,13 +86,7 @@ header a:hover{
 	transform: scale(1.05);
 }
 
-.header-menu-btn{
-	color: #E2E8EE;
-	outline: none;
-	border: none;
-	font-size: 22px;
-	cursor: pointer;
-
+header .hidden{
 	display: none;
 }
 
@@ -158,31 +153,4 @@ footer a{
 
 .footer-sub-links a{
 	font-size: 12px;
-}
-
-/* Responsive Navbar */
-@media (max-width: 800px){
-	.header-links{
-		display: none;
-	}
-
-	.header-links.active{
-		width: 100%;
-
-		position: absolute;
-		top: 74px;
-		left: 0;
-		
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-
-	.header-links.active ul{
-		padding: 0px 20px 20px 20px;
-	}
-
-	.header-menu-btn{
-		display: block;
-	}	
 }

@@ -1,17 +1,38 @@
-// Header
-const headerMenu = document.querySelector(".header-links");
-const headerMenuBtn = document.querySelector(".header-menu-btn");
-const headerMenuBtnIcon = document.querySelector(".header-menu-btn i");
+// Responsive Header
+function responsiveHeader(){
+    const icons = document.querySelectorAll(".header-link i");
+    const names = document.querySelectorAll(".header-link p");
 
-// Responsive Header logic
-headerMenuBtn.addEventListener("click", () => {
-    if(headerMenu.classList.contains("active")){
-        headerMenu.classList.remove("active");
-        headerMenuBtnIcon.classList.remove("bi-x-lg");
-        headerMenuBtnIcon.classList.add("bi-list");
+    if(window.innerWidth < 600){
+        icons.forEach(icon => {
+            icon.classList.remove("hidden");
+        })
+        names.forEach(name => {
+            name.classList.add("hidden");
+        })
     }else{
-        headerMenu.classList.add("active");
-        headerMenuBtnIcon.classList.remove("bi-list");
-        headerMenuBtnIcon.classList.add("bi-x-lg");
+        icons.forEach(icon => {
+            icon.classList.add("hidden");
+        })
+        names.forEach(name => {
+            name.classList.remove("hidden");
+        })
     }
-});
+}
+
+responsiveHeader();
+window.addEventListener("resize", responsiveHeader);
+
+// Scroll Responsive Header
+function scrollHeader(){
+    const headerLinks = document.querySelector(".header-links");
+    
+    if (window.scrollY > 0){
+        headerLinks.classList.add("scroll");
+    }
+    if (window.scrollY < 30){
+        headerLinks.classList.remove("scroll");
+    }
+}
+
+window.addEventListener("scroll", scrollHeader);
