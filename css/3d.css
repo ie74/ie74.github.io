@@ -1,16 +1,4 @@
-/* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-/*
-WHITE: #E2E8EE
-ACCENT: #41619A
-BLUE: #1F2E4E
-GRAY: #1C2431
-BLACK: #0F1116
-
-BLACK-OVERLAY: #0F111667
-*/
-
+/* Blender */
 .project{
     display: flex;
     justify-content: center;
@@ -25,7 +13,7 @@ BLACK-OVERLAY: #0F111667
 
 .project-title{
     width: 100%;
-    color: #1c1c1c;
+    color: var(--azure);
     margin-bottom: 20px;
 }
 
