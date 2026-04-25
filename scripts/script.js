@@ -1,12 +1,15 @@
 // Loader
-window.addEventListener("load", () => {
-    const loader = document.querySelector(".loader");
+document.addEventListener("DOMContentLoaded", () => {
+  const logo = document.querySelector(".loader svg");
+  setTimeout(() => logo.classList.add("visible"), 150);
+});
 
-    // Fade out dopo che tutto è caricato (minimo 1.2s per non flashare)
-    setTimeout(() => {
-        loader.classList.add("hidden")
-        document.body.classList.remove('loading');
-    }, 500);
+window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader");
+  setTimeout(() => {
+    loader.classList.add("hidden");
+    document.body.classList.remove("loading");
+  }, 400);
 });
 
 // Responsive Header
