@@ -1,3 +1,14 @@
+// Loader
+window.addEventListener("load", () => {
+    const loader = document.querySelector(".loader");
+
+    // Fade out dopo che tutto è caricato (minimo 1.2s per non flashare)
+    setTimeout(() => {
+        loader.classList.add("hidden")
+        document.body.classList.remove('loading');
+    }, 500);
+});
+
 // Responsive Header
 function responsiveHeader(){
     const icons = document.querySelectorAll(".header-link i");
