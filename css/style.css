@@ -40,7 +40,7 @@
 }
 
 html{
-	height: 100dvh;
+	height: 100vh;
 	font-family: "Montserrat", sans-serif;
 	background: linear-gradient(135deg, var(--gradient-blue) 0%, var(--gradient-gray) 50%, var(--gradient-black) 100%);
     background-attachment: fixed;
