@@ -37,6 +37,7 @@
     text-transform: uppercase;
     animation: glow 3s ease-in-out infinite;
 }
+
 .explore i{
     display: block;
     margin-top: 2px;
