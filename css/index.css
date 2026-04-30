@@ -1,23 +1,15 @@
 /* Welcome */
-@keyframes glow {
-    0%, 100% { color: var(--gold); }
-    50% { color: var(--gold-glow); }
-}
-
-@keyframes bounce {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(5px); }
-}
-
 .welcome-screen{
+    width: 100%;
     position: relative;
     height: calc(100dvh - 60px);
 
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
 }
 
+/* Logo */
 .logo svg{
     position: absolute;
 	top: 50%;
@@ -27,13 +19,69 @@
 	height: 100%;
     opacity: 0.1;
 	pointer-events: none;
-	z-index: -1;
+	z-index: -2;
 	fill: var(--azure);
 }
 
+/* Landing Projects */
+.projects{
+    width: 90%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 55px;
+}
+
+.project-link{
+    color: var(--white);
+    font-size: 24px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    box-shadow: 0px 5px 10px 5px var(--gray-shadow);
+}
+
+.project-link:hover{
+    transform: scale(1.05);
+}
+
+.link-cover{
+    width: 300px;
+    height: 200px;
+    background-color: var(--azure);
+    border-radius: 15px;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#photo .link-cover{
+    background-image: url("../photos/IMG20251026150136.jpg");
+}
+
+#d3 .link-cover{
+    background-image: url("../photos/Render\ Last.jpg");
+}
+
+.link-cover span{
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+
+/* Explore */
 .explore{
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+
     text-align: center;
-    margin-bottom: 35px;
     text-transform: uppercase;
     animation: glow 3s ease-in-out infinite;
 }
@@ -42,4 +90,14 @@
     display: block;
     margin-top: 2px;
     animation: bounce 3s ease-in-out infinite;
+}
+
+@keyframes glow {
+    0%, 100% { color: var(--gold); }
+    50% { color: var(--gold-glow); }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(5px); }
 }
