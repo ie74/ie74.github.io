@@ -3,31 +3,27 @@
 
 /* Colors */
 :root {
-	--white: #1A2333;
-	--gold: #B5832E;
-	--gold-glow: #E8A830;
-	--azure: #5E7088;
-	--gradient-blue: #FFFFFF;
-	--gradient-gray: #F0F2F5;
-	--gradient-black: #CBD2DC;
-
-	--gray-border: #F0F2F5CE;
-	--gray-bg: #F0F2F5A8;
-	--gray-shadow: #F0F2F567;
+	--bg: #F2F2F2;
+	--surface: #FFFFFF;
+	--surface-alt: #E6E6E6;
+	--border: #CFCFCF;
+	--text-primary: #1C1C1C;
+	--text-muted: #6A6A6A;
+	--accent: #1A9E84;
+	--accent2: #A63A5A;
 }
 
 /* Dark automatico dal sistema */
 @media (prefers-color-scheme: dark) {
 	:root {
-		--white: #E2E8EE;
-		--azure: #41619A;
-		--gradient-blue: #1F2E4E;
-		--gradient-gray: #1C2431;
-		--gradient-black: #0F1116;
-
-		--gray-border: #1C2431CE;
-		--gray-bg: #1C2431A8;
-		--gray-shadow: #1C243167;
+		--bg: #111827;
+		--surface: #1A2030;
+		--surface-alt: #222B3E;
+		--border: #2C3750;
+		--text-primary: #E8EEF8;
+		--text-muted: #8B9AB2;
+		--accent: #3ABFA0;
+		--accent-alt: #BF5A7A;
 	}
 }
 
@@ -41,9 +37,8 @@
 
 html{
 	font-family: "Montserrat", sans-serif;
-	background: linear-gradient(135deg, var(--gradient-blue) 0%, var(--gradient-gray) 50%, var(--gradient-black) 100%);
-    background-attachment: fixed;
-	color: var(--white);
+	background-color: var(--bg);
+	color: var(--text-muted);
 }
 
 /* Loader */
@@ -58,8 +53,7 @@ body.loading {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background: linear-gradient(135deg, var(--gradient-blue) 0%, var(--gradient-gray) 50%, var(--gradient-black) 100%);
-	transition: opacity 0.9s cubic-bezier(0.4, 0, 0.2, 1);
+	background-color: var(--bg);
 }
 
 .loader.hidden {
@@ -74,7 +68,7 @@ body.loading {
   	transform: scale(0.96);
 	
 	fill: none;
-	stroke: var(--white);
+	stroke: var(--text-primary);
 	stroke-width: 8;
 	stroke-opacity: 0.5;
 	stroke-dasharray: 2443 1000;
@@ -111,11 +105,8 @@ header{
 	width: 100%;
 	height: 100%;
 	padding: 8px;
-	background-color: var(--gray-bg);
-	box-shadow: 0px 0px 10px 2px var(--gray-shadow) inset;
-	border-bottom: 1px solid var(--gray-border);
-	backdrop-filter: blur(10px);
-	-webkit-backdrop-filter: blur(10px);
+	background-color: var(--surface);
+	border-bottom: 1px solid var(--border);
 
 	display: flex;
 	justify-content: center;
@@ -133,7 +124,7 @@ header{
 	height: fit-content;
 	margin-top: 8px;
 	border-radius: 28px;
-	border: 1px solid var(--gray-border);
+	border: 1px solid var(--border);
 }
 
 .header-links ul{
@@ -151,14 +142,14 @@ header a{
 	font-size: 15px;
 
 	border-radius: 18px;
-	color: var(--white);
+	color: var(--text-primary);
 	text-decoration: none;
 
-	transition: transform 0.1s ease;
+	transition: color 0.1s ease;
 }
 
 header a:hover{
-	transform: scale(1.05);
+	color: var(--accent);
 }
 
 header .hidden{
@@ -178,7 +169,7 @@ header .hidden{
 
 .section-title{
 	text-align: center;
-	color: var(--gold);
+	color: var(--text-primary);
 }
 
 .section-container{
@@ -191,16 +182,18 @@ header .hidden{
 
 /* Footer */
 footer{
-	padding: 30px;
-	background-color: var(--gray-bg);
-	border-top: 1px solid var(--gray-border);
-	color: var(--white);
+	background-color: var(--surface);
+	color: var(--text-muted);
 	font-size: 15px;
 	text-align: center;
 }
 
 .footer-container{
-	margin-top: 25px;
+	border-color: var(--border);
+	border-style: solid;
+	border-width: 1px 0px;
+	height: 140px;
+	padding: 30px;
 
 	display: flex;
 	justify-content: center;
@@ -211,12 +204,16 @@ footer{
 
 .footer-divider{
 	width: 1px;
-	height: 80px;
-	background-color: var(--white);
+	height: 100%;
+	background-color: var(--text-muted);
 }
 
 .footer-content{
-	height: 80px;
+	height: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .footer-content#links{
@@ -228,9 +225,12 @@ footer{
 }
 
 .footer-title{
-	color: var(--azure);
+	color: var(--text-primary);
 	margin-bottom: 10px;
-	font-size: 20px;
+	font-size: 16px;
+	font-weight: 500;
+	letter-spacing: 3px;
+	text-transform: uppercase;
 }
 
 .footer-links{
@@ -242,14 +242,20 @@ footer{
 }
 
 .footer-links a{
-	color: var(--white);
+	color: var(--text-muted);
 	text-decoration: none;
 }
 
 .footer-links a:hover{
 	text-decoration: underline;
+	color: var(--accent);
 }
 
 .footer-links i{
 	margin-right: 7px;
+}
+
+.footer-copyright{
+	padding: 10px;
+	background-color: var(--bg);
 }

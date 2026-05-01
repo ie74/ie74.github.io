@@ -1,11 +1,8 @@
 /* Gallery */
 .img-container{
-	border-radius: 15px;
 	position: relative;
 	width: 500px;
 	overflow: hidden;
-	transition: border-radius 0.3s ease;
-	box-shadow: 0px 5px 10px 5px var(--gray-shadow);
 }
 
 .img-container:hover{
@@ -21,8 +18,8 @@
 .img-desc {
 	width: 100%;
 	padding: 5px;
-	background-color: var(--gray-bg);
-	color: var(--white);
+	background-color: var(--surface);
+	color: var(--text-muted);
 
 	position: absolute;
 	bottom: 0;
