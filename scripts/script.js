@@ -36,17 +36,3 @@ function responsiveHeader(){
 
 responsiveHeader();
 window.addEventListener("resize", responsiveHeader);
-
-// Scroll Responsive Header
-function scrollHeader(){
-    const headerLinks = document.querySelector(".header-links");
-    
-    if (window.scrollY > 0){
-        headerLinks.classList.add("scroll");
-    }
-    if (window.scrollY < 30){
-        headerLinks.classList.remove("scroll");
-    }
-}
-
-window.addEventListener("scroll", scrollHeader);
