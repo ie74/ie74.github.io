@@ -1,74 +1,16 @@
-/* Welcome */
-.welcome-screen{
+/* Landing */
+.landing{
     width: 100%;
     position: relative;
     height: calc(100dvh - 60px);
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-/* Logo */
-.logo svg{
-    position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: auto;
-	height: 100%;
-	pointer-events: none;
-	z-index: -2;
-	fill: var(--surface);
-}
-
-/* Landing Projects */
-.projects{
-    width: 90%;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 55px;
-}
-
-.project-link{
-    color: var(--text-primary);
-    font-size: 24px;
-    text-decoration: none;
-    transition: transform 0.3s ease;
-}
-
-.project-link:hover{
-    transform: scale(1.05);
-}
-
-.link-cover{
-    width: 300px;
-    height: 200px;
-    border-radius: 15px;
-
+.img{
+    width: 100%;
+    height: 70%;
+    background: url("../photos/render.006.png");
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#photo .link-cover{
-    background-image: url("../photos/img_04.jpg");
-}
-
-#d3 .link-cover{
-    background-image: url("../photos/donut_01.jpg");
-}
-
-.link-cover span{
-    text-transform: uppercase;
-    margin-right: 10px;
+    background-position: center
 }
 
 /* Explore */
