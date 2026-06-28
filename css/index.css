@@ -1,0 +1,12 @@
+/* Main */
+.landing-btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+#s2{
+    background-color: var(--surface);
+}
