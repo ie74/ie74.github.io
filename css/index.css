@@ -10,3 +10,40 @@
 #s2{
     background-color: var(--surface);
 }
+
+.selected-photos-container {
+    width: 80%;
+    margin: 40px auto 0px auto;
+
+    display: flex;
+    gap: 8px;
+}
+
+.container-col{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.container-col:first-child{
+    flex: 5;
+}
+
+.container-col:last-child{
+    flex: 4;
+}
+
+.container-col a{
+    display: block;
+}
+
+.container-col img{
+    width: 100%;
+    display: block;
+}
+
+@media(max-width:1500px){
+    .selected-photos-container{
+        flex-direction: column;
+    }
+}
