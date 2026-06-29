@@ -16,13 +16,13 @@
     margin: 40px auto 0px auto;
 
     display: flex;
-    gap: 8px;
+    gap: 0.5rem;
 }
 
 .container-col{
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 0.5rem;
 }
 
 .container-col:first-child{
@@ -42,7 +42,7 @@
     display: block;
 }
 
-@media(max-width:1500px){
+@media(max-width:800px){
     .selected-photos-container{
         flex-direction: column;
     }

@@ -17,22 +17,22 @@
 
 html{
     font-family: "Inter", sans-serif;
-
+    font-size: 18px;
     background-color: var(--bg);
 }
 
 /* Styles */
 .title{
-    font-family: "Merryweather", serif;
+    font-family: "Merriweather", serif;
     color: var(--primary);
-    font-size: 72px;
+    font-size: 4rem;
     font-weight: 900;
 }
 
 .subtitle{
     font-family: "Raleway", sans-serif;
     color: var(--accent);
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -41,7 +41,7 @@ html{
 .link{
     font-family: "Raleway", sans-serif;
     color: var(--secondary);
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 400;
     text-decoration: none;
 }
@@ -55,14 +55,14 @@ html{
 .caption{
     font-family: "Inter", sans-serif;
     color: var(--secondary);
-    font-size: 14px;
-    margin-top: 10px;
+    font-size: 0.78rem;
+    margin-top: 0.5rem;
 }
 
 .btn{
     font-family: "Raleway", sans-serif;
     color: var(--secondary);
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 400;
     text-decoration: none;
 
@@ -82,7 +82,7 @@ html{
 .btn-important{
     font-family: "Raleway", sans-serif;
     color: var(--bg);
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 400;
     text-decoration: none;
 
@@ -129,4 +129,10 @@ header .links{
 /* Main */
 .section{
     padding: 50px 0px;
+}
+
+@media(max-width: 700px){
+    html{
+        font-size: 12px;
+    }
 }
