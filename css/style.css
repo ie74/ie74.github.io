@@ -56,7 +56,7 @@ html{
     font-family: "Inter", sans-serif;
     color: var(--secondary);
     font-size: 0.78rem;
-    margin-top: 0.5rem;
+    margin-top: 0.3rem;
 }
 
 .btn{
@@ -67,11 +67,19 @@ html{
     text-decoration: none;
 
     outline: none;
-    padding: 10px 15px;
+
+    height: 2.3rem;
+    width: fit-content;
+    padding: 0px 0.7rem;
+
     border: 1px solid var(--secondary);
     border-radius: 500px;
     background-color: var(--bg);
     cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn:active{
@@ -87,11 +95,19 @@ html{
     text-decoration: none;
 
     outline: none;
-    padding: 10px 15px;
+    
+    height: 2.3rem;
+    width: fit-content;
+    padding: 0px 0.7rem;
+
     border: 1px solid var(--accent);
     border-radius: 500px;
     background-color: var(--accent);
-    cursor: pointer;
+    cursor: pointer;    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn-important:active{  
@@ -115,6 +131,11 @@ header .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+header svg{
+    height: 2rem;
+    fill: var(--primary);
 }
 
 header .links{
