@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,22 +11,29 @@
 	<!-- Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+
+	<!-- Icons -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
 	<header>
 		<div class="container">
 			<a href="#">
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 595.3 532">
-					<path d="M508.5,319.8V0H0v188.1h108.9v-87.4h144.4L62.7,531.9h133.6l48.8-111.5h143.8v111.5h119.7V420.5h86.8V319.8H508.5z M392.6,320.4l-103.2-0.6L392.6,83.6V320.4z"/>
+					<path
+						d="M508.5,319.8V0H0v188.1h108.9v-87.4h144.4L62.7,531.9h133.6l48.8-111.5h143.8v111.5h119.7V420.5h86.8V319.8H508.5z M392.6,320.4l-103.2-0.6L392.6,83.6V320.4z" />
 				</svg>
 			</a>
 			<ul class="links">
-				<li><a href="pages/gallery.html" class="link">Gallery</a></li>			
+				<li><a href="pages/gallery.html" class="link">Gallery</a></li>
 				<li><a href="pages/about.html" class="link">About</a></li>
 			</ul>
 		</div>
@@ -39,45 +47,47 @@
 				<p class="caption">Young developer and photographer.</p>
 
 				<div class="landing-btn-container">
-					<a href="#s2" class="btn-important">Featured</a>					
-					<a href="pages/about.html" class="btn">About me</a>
+					<a href="#s2" class="btn btn-important">Featured</a>
+					<a href="pages/about.html" class="btn">About me <i class="bi bi-arrow-up-right"></i></a>
 				</div>
-			</div>			
+			</div>
 		</div>
-		
+
 		<div class="section" id="s2">
 			<div class="container">
-				<h2 class="subtitle">photography</h2>
-				<p class="caption">A selection of photographs made across the years</p>
+				<hr>
 
-				<div class="selected-photos-container">					
-					<div class="marquee-track">
-						<img src="assets/photos/thumb/img_01_thumb.jpg" alt="">
-						<img src="assets/photos/thumb/img_02_thumb.jpg" alt="">
-						<img src="assets/photos/thumb/img_06_thumb.jpg" alt="">
-						<img src="assets/photos/thumb/img_03_thumb.jpg" alt="">
-						<img src="assets/photos/thumb/img_04_thumb.jpg" alt="">
-						<img src="assets/photos/thumb/img_08_thumb.jpg" alt="">
-
-						<!-- Identical image set -->
-						<img src="assets/photos/thumb/img_01_thumb.jpg" alt="">
-						<img src="assets/photos/thumb/img_02_thumb.jpg" alt="">
-						<img src="assets/photos/thumb/img_06_thumb.jpg" alt="">
-						<img src="assets/photos/thumb/img_03_thumb.jpg" alt="">
-						<img src="assets/photos/thumb/img_04_thumb.jpg" alt="">
-						<img src="assets/photos/thumb/img_08_thumb.jpg" alt="">
-					</div>
+				<div class="title-container">
+					<h1 class="title">Photography</h1>
+					<a href="pages/gallery.html" class="btn">See full gallery <i class="bi bi-arrow-up-right"></i></a>
 				</div>
 
-				<a href="pages/gallery.html" class="btn-important">See full gallery ></a>
+				<div class="selected-photos-container">
+					<div class="img-container"></div>
+					<div class="img-container"></div>
+					<div class="img-container"></div>
+					<div class="img-container"></div>
+					<div class="img-container"></div>
+					<div class="img-container"></div>
+					<div class="img-container"></div>
+					<div class="img-container"></div>
+					<div class="img-container"></div>
+					<div class="img-container"></div>
+					<div class="img-container"></div>
+					<div class="img-container"></div>
+				</div>
 			</div>
 		</div>
 
 		<div class="section" id="s3">
 			<div class="container">
-				<h2 class="subtitle">projects</h2>
+				<hr>
 
-				<a href="#" class="btn-important">See all projects ></a>
+				<div class="title-container">
+					<h1 class="title">Projects</h1>
+					<a href="#" class="btn">See all projects <i class="bi bi-arrow-up-right"></i></a>
+				</div>
+
 			</div>
 		</div>
 	</main>
@@ -86,4 +96,5 @@
 
 	</footer>
 </body>
+
 </html>
