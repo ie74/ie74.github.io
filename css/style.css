@@ -170,20 +170,13 @@ header:hover #header-bottom {
 
 /* ========== Footer ========== */
 footer{
+    padding-top: 1rem;
     background-color: var(--primary);
     color: var(--surface);
 }
 
 footer hr{
     margin: 0px;
-}
-
-.footer-handle{
-    padding: 0.5rem 0px;    
-    font-family: 'Merriweather', serif;
-    color: var(--surface);
-    font-size: 2rem;
-    text-align: center;
 }
 
 .footer-container{
@@ -243,6 +236,10 @@ footer a:hover{
 
     .container {
         padding: 0.5rem;
+    }
+
+    #header-bottom{
+        justify-content: center;
     }
 
     .section {
