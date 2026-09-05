@@ -1,50 +1,29 @@
-/* Main */
+/* Landing */
 #s1 {
     width: 100%;
-    height: 70vh;
+    height: 100dvh;
     min-height: fit-content;
     background-image: url(../assets/photos/full/img_08.jpg);
     background-size: cover;
     background-position: center;
+}
+
+#s1 .container {
+    height: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: flex-end;
-    align-items: flex-start;
+    gap: 2rem;
 }
 
-.marquee {
-    overflow: hidden;
-    width: 100%;
-    white-space: nowrap;
-    background-color: var(--accent);
-}
-
-.marquee-track {
-    display: inline-flex;
-    animation: scroll 40s linear infinite;
-}
-
-.marquee-item {
-    flex-shrink: 0;
-    margin-right: 3rem;
-    font-size: clamp(5rem, 10vw, 8rem);
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
-    text-transform: uppercase;
+#s1 .btn {
+    border: 1px solid var(--surface);
     color: var(--surface);
 }
 
-@keyframes scroll {
-    from {
-        transform: translateX(0);
-    }
-
-    to {
-        transform: translateX(-50%);
-    }
-}
-
 .landing-btn-container {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -53,6 +32,19 @@
     margin-top: 30px;
 }
 
+.scroll-txt {
+    font-family: 'IBM Plex Mono';
+    text-transform: uppercase;
+    font-size: 0.5rem;
+    color: var(--surface);
+    cursor: pointer;
+}
+
+.scroll-txt:hover {
+    text-decoration: underline;
+}
+
+/* Photography */
 #s2 {
     background-color: var(--surface);
 }
@@ -69,7 +61,7 @@
 .selected-photos-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
-    gap: 1rem;
+    gap: 0.5rem;
 }
 
 .img-container {
@@ -85,7 +77,13 @@
     cursor: pointer;
 }
 
+/* Responsive */
 @media (max-width: 700px) {
+    .landing-btn-container {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
     .title-container {
         flex-direction: column;
         justify-content: flex-start;
