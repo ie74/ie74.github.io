@@ -58,25 +58,6 @@
     gap: 0.7rem;
 }
 
-.selected-photos-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
-    gap: 0.5rem;
-}
-
-.img-container {
-    width: 100%;
-    aspect-ratio: 4/3;
-    overflow: hidden;
-}
-
-.img-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    cursor: pointer;
-}
-
 /* Responsive */
 @media (max-width: 700px) {
     .landing-btn-container {

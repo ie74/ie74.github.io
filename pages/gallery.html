@@ -10,10 +10,10 @@
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-		rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
@@ -44,85 +44,68 @@
     <main>
         <div class="section" id="s1">
             <div class="container">
-                <h2 class="subtitle">Photo</h2>
-                <h1 class="title">Gallery</h1>
             </div>
         </div>
 
-        <div class="section" id="s2">
+        <div class="section" id="gallery">
             <div class="container">
-                <div class="gallery-container">
-                    <div class="container-col">
-                        <a href="../assets/photos/full/img_01.jpg" data-caption="Venice, Italy, 20.09.2024.">
-                            <img src="../assets/photos/thumb/img_01_thumb.jpg" alt="img">
-                        </a>
-                        <a href="../assets/photos/full/img_04.jpg" data-caption="Venice, Italy, 26.10.2025.">
-                            <img src="../assets/photos/thumb/img_04_thumb.jpg" alt="img">
-                        </a>
-                        <a href="../assets/photos/full/img_10.jpg" data-caption="Venice, Italy, 07.07.2026.">
-                            <img src="../assets/photos/thumb/img_10_thumb.jpg" alt="img">
-                        </a>
-                    </div>
-                    <div class="container-col">
-                        <a href="../assets/photos/full/img_02.jpg" data-caption="Vienna, Austria, 02.03.2025.">
-                            <img src="../assets/photos/thumb/img_02_thumb.jpg" alt="img">
-                        </a>
-                        <a href="../assets/photos/full/img_05.jpg" data-caption="Seizer Alm, Italy, 24.06.2026.">
-                            <img src="../assets/photos/thumb/img_05_thumb.jpg" alt="img">
-                        </a>
-                        <a href="../assets/photos/full/img_07.jpg" data-caption="Seizer Alm, Italy, 24.06.2026.">
-                            <img src="../assets/photos/thumb/img_07_thumb.jpg" alt="img">
-                        </a>
-                    </div>
-                    <div class="container-col">
-                        <a href="../assets/photos/full/img_03.jpg" data-caption="Milan, Italy, 22.06.2025.">
-                            <img src="../assets/photos/thumb/img_03_thumb.jpg" alt="img">
-                        </a>
-                        <a href="../assets/photos/full/img_06.jpg" data-caption="Seizer Alm, Italy, 24.06.2026.">
-                            <img src="../assets/photos/thumb/img_06_thumb.jpg" alt="img">
-                        </a>
-                        <a href="../assets/photos/full/img_08.jpg" data-caption="Seizer Alm, Italy, 24.06.2026.">
-                            <img src="../assets/photos/thumb/img_08_thumb.jpg" alt="img">
-                        </a>
-                        <a href="../assets/photos/full/img_09.jpg" data-caption="Venice, Italy, 07.07.2026.">
-                            <img src="../assets/photos/thumb/img_09_thumb.jpg" alt="img">
-                        </a>
-                    </div>
+                <hr>
+                <h1 class="title">Gallery</h1>
+
+                <div class="masonry-grid" data-source="/data/photos.json" data-min-col-width="280"
+                    data-min-col-width-mobile="140">
                 </div>
             </div>
         </div>
+
+
     </main>
 
     <footer>
-		<div class="container">
-			<hr>
-			<div class="footer-container">
-				<div class="footer-links">
-					<ul>
-						<li><a href="gallery.html">Gallery<i class="bi bi-arrow-up-right"></i></a></li>
-						<li><a href="projects.html">Projects<i class="bi bi-arrow-up-right"></i></a></li>
-						<li><a href="about.html">About<i class="bi bi-arrow-up-right"></i></a></li>
-					</ul>
-					<ul>
-						<li><a href="https://github.com/ie74"><i class="bi bi-github"></i>GitHub</a></li>
-						<li><a href="https://discord.gg"><i class="bi bi-discord"></i>@ie74</a></li>
-					</ul>
-				</div>
+        <div class="container">
+            <hr>
+            <div class="footer-container">
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="gallery.html">Gallery<i class="bi bi-arrow-up-right"></i></a></li>
+                        <li><a href="projects.html">Projects<i class="bi bi-arrow-up-right"></i></a></li>
+                        <li><a href="about.html">About<i class="bi bi-arrow-up-right"></i></a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="https://github.com/ie74"><i class="bi bi-github"></i>GitHub</a></li>
+                        <li><a href="https://discord.gg"><i class="bi bi-discord"></i>@ie74</a></li>
+                    </ul>
+                </div>
 
-				<div class="footer-license">
-					The source code of this website is released under the GPL-3.0 license. <br>
-					Photographs are original works protected under CC BY-NC-ND 4.0.
-				</div>
-			</div>
-			<p class="footer-copyright">© 2026 ie74. All rights reserved.</p>
-		</div>
-	</footer>
+                <div class="footer-license">
+                    The source code of this website is released under the GPL-3.0 license. <br>
+                    Photographs are original works protected under CC BY-NC-ND 4.0.
+                </div>
+            </div>
+            <p class="footer-copyright">© 2026 ie74. All rights reserved.</p>
+        </div>
+    </footer>
 
     <div class="lightbox" id="lightbox">
-        <div class="lightbox-card">
-            <img class="lightbox-img" id="lightbox-img" src="" alt="">
-            <p class="caption" id="lightbox-caption"></p>
+        <div class="lightbox-bar lightbox-bar-top">
+            <div class="lightbox-controls">
+                <button class="lightbox-btn lightbox-prev" aria-label="Previous">
+                    <i class="bi bi-arrow-left-short"></i>
+                </button>
+                <button class="lightbox-btn lightbox-next" aria-label="Next">
+                    <i class="bi bi-arrow-right-short"></i>
+                </button>
+                <button class="lightbox-btn lightbox-close" aria-label="Close">
+                    <i class="bi bi-x"></i>
+                </button>
+            </div>
         </div>
+
+        <div class="lightbox-content">
+            <img class="lightbox-image" src="" alt="">
+        </div>
+
+        <div class="lightbox-bar lightbox-bar-bottom"></div>
     </div>
 
     <script src="../js/script.js"></script>

@@ -20,6 +20,7 @@
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/gallery.css">
 	<link rel="stylesheet" href="css/index.css">
 </head>
 
@@ -65,19 +66,8 @@
 					<a href="pages/gallery.html" class="btn">See full gallery <i class="bi bi-arrow-up-right"></i></a>
 				</div>
 
-				<div class="selected-photos-container">
-					<div class="img-container"><img src="assets/photos/thumb/img_01_thumb.jpg" alt=""></div>
-					<div class="img-container"><img src="assets/photos/thumb/img_02_thumb.jpg" alt=""></div>
-					<div class="img-container"><img src="assets/photos/thumb/img_03_thumb.jpg" alt=""></div>
-					<div class="img-container"><img src="assets/photos/thumb/img_04_thumb.jpg" alt=""></div>
-					<div class="img-container"><img src="assets/photos/thumb/img_05_thumb.jpg" alt=""></div>
-					<div class="img-container"><img src="assets/photos/thumb/img_06_thumb.jpg" alt=""></div>
-					<div class="img-container"><img src="assets/photos/thumb/img_07_thumb.jpg" alt=""></div>
-					<div class="img-container"><img src="assets/photos/thumb/img_08_thumb.jpg" alt=""></div>
-					<div class="img-container"><img src="assets/photos/thumb/img_09_thumb.jpg" alt=""></div>
-					<div class="img-container"><img src="assets/photos/thumb/img_10_thumb.jpg" alt=""></div>
-					<div class="img-container"><img src="assets/photos/thumb/img_01_thumb.jpg" alt=""></div>
-					<div class="img-container"><img src="assets/photos/thumb/img_02_thumb.jpg" alt=""></div>
+				<div class="masonry-grid" data-source="/data/photos.json" data-max-items="8" data-min-col-width="280"
+					data-min-col-width-mobile="140">
 				</div>
 			</div>
 		</div>
@@ -156,7 +146,30 @@
 		</div>
 	</footer>
 
+	<div class="lightbox" id="lightbox">
+		<div class="lightbox-bar lightbox-bar-top">
+			<div class="lightbox-controls">
+				<button class="lightbox-btn lightbox-prev" aria-label="Previous">
+					<i class="bi bi-arrow-left-short"></i>
+				</button>
+				<button class="lightbox-btn lightbox-next" aria-label="Next">
+					<i class="bi bi-arrow-right-short"></i>
+				</button>
+				<button class="lightbox-btn lightbox-close" aria-label="Close">
+					<i class="bi bi-x"></i>
+				</button>
+			</div>
+		</div>
+
+		<div class="lightbox-content">
+			<img class="lightbox-image" src="" alt="">
+		</div>
+
+		<div class="lightbox-bar lightbox-bar-bottom"></div>
+	</div>
+
 	<script src="js/script.js"></script>
+	<script src="js/gallery.js"></script>
 </body>
 
 </html>
