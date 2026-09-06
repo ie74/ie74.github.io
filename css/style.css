@@ -19,6 +19,12 @@ html {
     font-size: 22px;
     background-color: var(--bg);
     scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
 }
 
 /* ========== Common styles ========== */

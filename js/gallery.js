@@ -85,7 +85,7 @@ function openLightbox(photosArray, startIndex) {
   const lightbox = document.getElementById('lightbox');
   const img = lightbox.querySelector('.lightbox-image');
 
-  img.src = currentPhotos[currentIndex].full;
+  img.src = `/${currentPhotos[currentIndex].full}`;
   lightbox.classList.add('is-open');
 }
 
@@ -109,7 +109,7 @@ function changeImage(direction) {
       ? (currentIndex + 1) % currentPhotos.length
       : (currentIndex - 1 + currentPhotos.length) % currentPhotos.length;
 
-    const nextSrc = currentPhotos[currentIndex].full;
+    const nextSrc = `/${currentPhotos[currentIndex].full}`;
 
     const preloader = new Image();
     preloader.onload = () => {
