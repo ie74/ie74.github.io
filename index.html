@@ -7,13 +7,14 @@
 
 	<!-- Preview -->
 	<meta property="og:title" content="Home | ie74">
+	<meta property="og:description" content="Young developer and photographer">
 	<meta property="og:image" content="https://ie74.github.io/assets/previews/index.jpg">
 	<meta property="og:url" content="https://ie74.github.io">
 	<meta property="og:type" content="website">
 
 	<!-- Title -->
 	<title>Home | ie74</title>
-	<link rel="shortcut icon" href="assets/icons/favicon.svg" type="image/x-icon">
+	<link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
 
 	<!-- Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -64,14 +65,12 @@
 			</div>
 		</div>
 
-		<div class="section" id="photography">
+		<div class="section main-section" id="photography">
 			<div class="container">
 				<hr>
 
-				<div class="title-container">
-					<h1 class="title">Photography</h1>
-					<a href="pages/gallery.html" class="btn">See full gallery <i class="bi bi-arrow-up-right"></i></a>
-				</div>
+				<h1 class="title">Photography</h1>
+				<a href="pages/gallery.html" class="btn">See full gallery <i class="bi bi-arrow-up-right"></i></a>
 
 				<div class="masonry-grid" data-source="/data/photos.json" data-max-items="15" data-min-col-width="280"
 					data-min-col-width-mobile="140">
@@ -79,19 +78,27 @@
 			</div>
 		</div>
 
-		<div class="section" id="projects">
+		<div class="section main-section" id="projects">
 			<div class="container">
 				<hr>
-				<div class="title-container">
-					<h1 class="title">Projects</h1>
-					<a href="pages/projects.html" class="btn">See all projects <i class="bi bi-arrow-up-right"></i></a>
-				</div>
+				<h1 class="title">Projects</h1>
+				<a href="pages/projects.html" class="btn">See all projects <i class="bi bi-arrow-up-right"></i></a>
 
 				<div class="featured-projects">
-
+					<div class="project-card">
+						<a href="/pages/projects.html#bordr">
+							<div class="project-img-container">
+								<img src="assets/projects/bordr-logo.png" alt="" class="project-img">
+								<div class="wip-tag">WIP</div>
+							</div>
+							<h1 class="subtitle">Bordr</h1>
+							<p class="caption">A browser-based tool for adding perfectly consistent borders to your
+								photos before posting.</p>
+							<div class="project-btn btn">More <i class="bi bi-arrow-right"></i></div>
+						</a>
+					</div>
 				</div>
 			</div>
-		</div>
 	</main>
 
 	<footer>
