@@ -1,6 +1,19 @@
-#hero {
+#title {
     width: 100%;
     background-color: var(--surface);
+}
+
+#title .btn{
+    margin-bottom: 1rem;
+}
+
+#title .btn i{
+    margin-left: 0px;
+    margin-right: 0.2rem;
+}
+
+#title h1{
+    margin-bottom: 0.3rem;
 }
 
 /* ========== Gallery ========== */
