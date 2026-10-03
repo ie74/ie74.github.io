@@ -148,5 +148,47 @@
     "width": 600,
     "height": 800,
     "caption": ""
+  },
+  {
+    "thumb": "assets/photos/thumb/Perugia - Edited (1)_thumb.JPG",
+    "full": "assets/photos/full/Perugia - Edited (1).JPG",
+    "width": 600,
+    "height": 800,
+    "caption": ""
+  },
+  {
+    "thumb": "assets/photos/thumb/20260421_123157_IMG_2315_thumb.jpg",
+    "full": "assets/photos/full/20260421_123157_IMG_2315.jpg",
+    "width": 600,
+    "height": 901,
+    "caption": ""
+  },
+  {
+    "thumb": "assets/photos/thumb/20260421_130026_IMG_2359_thumb.jpg",
+    "full": "assets/photos/full/20260421_130026_IMG_2359.jpg",
+    "width": 600,
+    "height": 905,
+    "caption": ""
+  },
+  {
+    "thumb": "assets/photos/thumb/DSC_1094_thumb.jpg",
+    "full": "assets/photos/full/DSC_1094.jpg",
+    "width": 600,
+    "height": 398,
+    "caption": ""
+  },
+  {
+    "thumb": "assets/photos/thumb/DSC_1130_thumb.jpg",
+    "full": "assets/photos/full/DSC_1130.jpg",
+    "width": 600,
+    "height": 392,
+    "caption": ""
+  },
+  {
+    "thumb": "assets/photos/thumb/DSC_1140_thumb.jpg",
+    "full": "assets/photos/full/DSC_1140.jpg",
+    "width": 600,
+    "height": 936,
+    "caption": ""
   }
 ]

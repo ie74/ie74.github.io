@@ -102,13 +102,7 @@
     max-width: min(25rem, 100%);
 }
 
-.feature i{
-    font-size: 3rem;
-    color: var(--bordr-secondary);
-}
-
 #bordr .feature .feature-title{
-    margin-top: 0.7rem;
     color: var(--bordr-primary);
     margin-bottom: 1rem;
 }
