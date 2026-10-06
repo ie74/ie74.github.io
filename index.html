@@ -1,155 +1,131 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<!-- Preview -->
-	<meta property="og:title" content="Home | ie74">
-	<meta property="og:description" content="Young developer and photographer">
-	<meta property="og:image" content="https://ie74.github.io/assets/previews/index.jpg">
-	<meta property="og:url" content="https://ie74.github.io">
-	<meta property="og:type" content="website">
-
-	<!-- Title -->
-	<title>Home | ie74</title>
-	<link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
-
-	<!-- Fonts -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-		rel="stylesheet">
-
-	<!-- Icons -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-
-	<!-- CSS -->
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/gallery.css">
-	<link rel="stylesheet" href="css/index.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ie74</title>
+    <meta name="description" content="Photography and software by ie74.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="ie74">
+    <meta property="og:title" content="ie74">
+    <meta property="og:description" content="Photography and software by ie74.">
+    <meta property="og:url" content="https://ie74.github.io/">
+    <meta property="og:image" content="https://ie74.github.io/assets/og.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://ie74.github.io/assets/og.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <script>document.documentElement.classList.add("js")</script>
 </head>
 
 <body>
-	<header>
-		<div class="container" id="header-top">
-			<a href="#">
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 595.3 532">
-					<path
-						d="M508.5,319.8V0H0v188.1h108.9v-87.4h144.4L62.7,531.9h133.6l48.8-111.5h143.8v111.5h119.7V420.5h86.8V319.8H508.5z M392.6,320.4l-103.2-0.6L392.6,83.6V320.4z" />
-				</svg>
-			</a>
-
-			<h1>ie74</h1>
-		</div>
-		<div class="container" id="header-bottom">
-			<ul class="header-links">
-				<li><a href="pages/gallery.html" class="header-link">Gallery</a></li>
-				<li><a href="pages/projects.html" class="header-link">Projects</a></li>
-				<li><a href="pages/about.html" class="header-link">About</a></li>
-			</ul>
-		</div>
-	</header>
-
-	<main>
-		<div class="section" id="hero">
-			<div class="container">
-				<div class="landing-btn-container">
-					<a href="#photography" class="btn">Photography</a>
-					<a href="#projects" class="btn">Projects</a>
-					<a href="pages/about.html" class="btn">About me <i class="bi bi-arrow-up-right"></i></a>
-				</div>
-				<a class="scroll-txt" href="#photography">Scroll down</a>
-			</div>
-		</div>
-
-		<div class="section main-section" id="photography">
-			<div class="container">
-				<hr>
-
-				<h1 class="title">Photography</h1>
-				<a href="pages/gallery.html" class="btn">See full gallery <i class="bi bi-arrow-up-right"></i></a>
-
-				<div class="masonry-grid" data-source="/data/photos.json" data-max-items="15" data-min-col-width="280"
-					data-min-col-width-mobile="140">
-				</div>
-			</div>
-		</div>
-
-		<div class="section main-section" id="projects">
-			<div class="container">
-				<hr>
-				<h1 class="title">Projects</h1>
-				<a href="pages/projects.html" class="btn">See all projects <i class="bi bi-arrow-up-right"></i></a>
-
-				<div class="featured-projects">
-					<div class="project-card">
-						<a href="/pages/projects.html#bordr">
-							<div class="project-img-container">
-								<img src="assets/projects/bordr-logo.png" alt="" class="project-img">
-								<div class="wip-tag">WIP</div>
-							</div>
-							<h1 class="subtitle">Bordr</h1>
-							<p class="caption">A browser-based tool for adding perfectly consistent borders to your
-								photos before posting.</p>
-							<div class="project-btn btn">More <i class="bi bi-arrow-right"></i></div>
-						</a>
-					</div>
-				</div>
-			</div>
-	</main>
-
-	<footer>
-		<div class="container">
-			<hr>
-			<div class="footer-container">
-				<div class="footer-links">
-					<ul>
-						<li><a href="pages/gallery.html">Gallery<i class="bi bi-arrow-up-right"></i></a></li>
-						<li><a href="pages/projects.html">Projects<i class="bi bi-arrow-up-right"></i></a></li>
-						<li><a href="pages/about.html">About<i class="bi bi-arrow-up-right"></i></a></li>
-					</ul>
-					<ul>
-						<li><a href="https://github.com/ie74"><i class="bi bi-github"></i>GitHub</a></li>
-						<li><a href="https://discord.gg"><i class="bi bi-discord"></i>@ie74</a></li>
-					</ul>
-				</div>
-
-				<div class="footer-license">
-					The source code of this website is released under the GPL-3.0 license.
-					Photographs are original works protected under CC BY-NC-ND 4.0.
-				</div>
-			</div>
-			<p class="footer-copyright">© 2026 ie74. All rights reserved.</p>
-		</div>
-	</footer>
-
-	<div class="lightbox" id="lightbox">
-		<div class="lightbox-bar lightbox-bar-top">
-			<div class="lightbox-controls">
-				<button class="lightbox-btn lightbox-prev" aria-label="Previous">
-					<i class="bi bi-arrow-left-short"></i>
-				</button>
-				<button class="lightbox-btn lightbox-next" aria-label="Next">
-					<i class="bi bi-arrow-right-short"></i>
-				</button>
-				<button class="lightbox-btn lightbox-close" aria-label="Close">
-					<i class="bi bi-x"></i>
-				</button>
-			</div>
-		</div>
-
-		<div class="lightbox-content">
-			<img class="lightbox-image" src="" alt="">
-		</div>
-
-		<div class="lightbox-bar lightbox-bar-bottom"></div>
-	</div>
-
-	<script src="js/script.js"></script>
-	<script src="js/gallery.js"></script>
+    <header class="site-header">
+        <div class="wrap"><a class="brand" href="/">ie74</a><button class="nav-toggle" aria-label="Menu"
+                aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+            <nav class="nav" id="nav">
+                <div class="switch"><a href="/pages/gallery.html">Photography</a><a
+                        href="/pages/projects.html">Projects</a></div><a href="/#about">About</a><a
+                    href="/#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="wrap">
+            <section class="hero">
+                <h1>Architecture, landscape, portrait.</h1>
+                <p>Photography in black and white and colour, plus software built for fun.</p>
+            </section>
+            <section class="section">
+                <div class="section-head">
+                    <h2>Selected photographs</h2><a class="link more-desktop" href="/pages/gallery.html">All photography
+                        →</a>
+                </div>
+                <div class="masonry" data-src="/data/photos.json" data-limit="8"></div><a class="link more-mobile"
+                    href="/pages/gallery.html">All photography →</a>
+            </section>
+        </div>
+        <section class="band theme-dark">
+            <div class="wrap">
+                <div class="section-head">
+                    <h2>Selected projects</h2><a class="link more-desktop" href="/pages/projects.html">All projects
+                        →</a>
+                </div>
+                <ol class="ledger">
+                    <li class="row"><span class="mono muted">[01]</span>
+                        <div>
+                            <h2><a href="/pages/projects.html#arxeion">Arxeion</a></h2>
+                            <p>Application launcher and organiser for Windows.</p>
+                        </div>
+                        <div class="tags"><span class="tag">C++</span><span class="tag">Windows</span></div>
+                    </li>
+                    <li class="row"><span class="mono muted">[02]</span>
+                        <div>
+                            <h2><a href="/pages/projects.html#photo-border">Photo border</a></h2>
+                            <p>Adds a uniform white border to photos for Instagram, with horizontal splitting into
+                                carousel slides.</p>
+                        </div>
+                        <div class="tags"><span class="tag">JavaScript</span><span class="tag">Canvas</span></div>
+                    </li>
+                    <li class="row"><span class="mono muted">[03]</span>
+                        <div>
+                            <h2><a href="/pages/projects.html#valorant-tracker">Valorant tracker</a></h2>
+                            <p>Game stats in the style of Tracker Network, for private use with friends.</p>
+                        </div>
+                        <div class="tags"><span class="tag">Riot API</span><span class="tag">Web app</span></div>
+                    </li>
+                </ol><a class="link more-mobile" href="/pages/projects.html">All projects →</a>
+            </div>
+        </section>
+        <div class="wrap">
+            <section class="section about" id="about">
+                <h2>About</h2>
+                <div class="muted" style="max-width:62ch;display:grid;gap:1rem">
+                    <p>I'm a photographer and hobbyist developer. I shoot with a Nikon D40 and I build small tools
+                        whenever something I need doesn't exist yet.</p>
+                    <p>DRAFT: add two or three sentences on how you work, what you look for in a photograph, and what
+                        you are building now.</p>
+                </div>
+            </section>
+            <section class="section contact" id="contact">
+                <h2>Contact</h2>
+                <p class="muted" style="margin-top:.5rem">For collaborations, prints or questions.</p>
+                <ul class="channels">
+                    <li><span class="mono muted">Email</span><a class="big" href="mailto:EMAIL_HERE">EMAIL_HERE</a></li>
+                    <li><span class="mono muted">GitHub</span><a class="big"
+                            href="https://github.com/ie74">github.com/ie74</a></li>
+                    <li><span class="mono muted">Discord</span><a class="big" href="#DISCORD_URL">DISCORD_HANDLE</a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="wrap">
+            <div class="foot">
+                <div><a class="brand" href="/">ie74</a>
+                    <p class="muted" style="margin-top:1rem;max-width:36ch">Photography and software, made for the love
+                        of it.</p>
+                </div>
+                <div>
+                    <h3>Navigate</h3>
+                    <ul>
+                        <li><a href="/pages/gallery.html">Photography</a></li>
+                        <li><a href="/pages/projects.html">Projects</a></li>
+                        <li><a href="/#about">About</a></li>
+                        <li><a href="/#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="foot-base mono"><span>&copy; 2026 ie74</span><span>Code GPL-3.0 &middot; Images CC BY-NC-ND
+                    4.0</span><a href="https://github.com/ie74/ie74.github.io">This site is open source &rarr;</a></div>
+        </div>
+    </footer>
+    <script src="/js/gallery.js"></script>
 </body>
 
 </html>

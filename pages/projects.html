@@ -1,132 +1,225 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Preview -->
-    <meta property="og:title" content="Home | ie74">
-    <meta property="og:description" content="Young developer and photographer">
-    <meta property="og:image" content="https://ie74.github.io/assets/previews/index.jpg">
-    <meta property="og:url" content="https://ie74.github.io">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Projects — ie74</title>
+    <meta name="description" content="Software projects by ie74: tools, trackers and utilities.">
     <meta property="og:type" content="website">
-
-    <!-- Title -->
-    <title>Projects | ie74</title>
-    <link rel="shortcut icon" href="../favicon.svg" type="image/x-icon">
-
-    <!-- Fonts -->
+    <meta property="og:site_name" content="ie74">
+    <meta property="og:title" content="Projects — ie74">
+    <meta property="og:description" content="Software projects by ie74: tools, trackers and utilities.">
+    <meta property="og:url" content="https://ie74.github.io/pages/projects.html">
+    <meta property="og:image" content="https://ie74.github.io/assets/og.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://ie74.github.io/assets/og.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap"
         rel="stylesheet">
-
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/projects.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script>document.documentElement.classList.add("js")</script>
 </head>
 
-<body>
-    <header>
-        <div class="container" id="header-top">
-            <a href="../index.html">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 595.3 532">
-                    <path
-                        d="M508.5,319.8V0H0v188.1h108.9v-87.4h144.4L62.7,531.9h133.6l48.8-111.5h143.8v111.5h119.7V420.5h86.8V319.8H508.5z M392.6,320.4l-103.2-0.6L392.6,83.6V320.4z" />
-                </svg>
-            </a>
-
-            <h1>ie74</h1>
-        </div>
-        <div class="container" id="header-bottom">
-            <ul class="header-links">
-                <li><a href="gallery.html" class="header-link">Gallery</a></li>
-                <li><a href="projects.html" class="header-link">Projects</a></li>
-                <li><a href="about.html" class="header-link">About</a></li>
-            </ul>
+<body class="theme-dark">
+    <header class="site-header">
+        <div class="wrap"><a class="brand" href="/">ie74</a><button class="nav-toggle" aria-label="Menu"
+                aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+            <nav class="nav" id="nav">
+                <div class="switch"><a href="/pages/gallery.html">Photography</a><a href="/pages/projects.html"
+                        aria-current="page">Projects</a></div><a href="/#about">About</a><a href="/#contact">Contact</a>
+            </nav>
         </div>
     </header>
-
-    <main>
-        <div class="header-spacer"></div>
-
-        <div class="section" id="title">
-            <div class="container">
-                <a href="/index.html" class="btn"><i class="bi bi-arrow-left"></i>Back</a>
-                <h1 class="title">Projects</h1>
-                <p class="caption">The stuff I'm working on.</p>
+    <main class="wrap">
+        <section class="hero" style="padding-bottom:3rem">
+            <h1>Projects</h1>
+            <p>Software built for personal use: tools, trackers and utilities.</p>
+        </section>
+        <nav class="pindex" aria-label="Projects"><a class="chip" href="#arxeion">Arxeion</a><a class="chip"
+                href="#photo-border">Photo border</a><a class="chip" href="#valorant-tracker">Valorant tracker</a><a
+                class="chip" href="#lego-tracker">LEGO tracker</a></nav>
+        <article class="project" id="arxeion">
+            <header class="p-head"><span class="mono muted">[01]</span>
+                <h2>Arxeion</h2><span class="mono status">Released</span>
+            </header>
+            <div class="p-body">
+                <div class="p-text">
+                    <p class="lead">A Windows launcher that turns the list of installed programs into something you can
+                        actually organise.</p>
+                    <p>Arxeion finds installed applications by scanning the Windows registry and loads their icons
+                        asynchronously, so the interface never waits on them. You can sort apps into categories and hide
+                        the ones you never use.</p>
+                    <p>Two views cover two jobs: a grid for launching, and a management view for categories and hidden
+                        apps. Everything you set up is saved as JSON, and a global shortcut written in AutoHotkey v2
+                        brings the launcher up from anywhere.</p>
+                    <p>The interface is immediate-mode (Dear ImGui) rendered through DirectX 11, and the whole program
+                        ships as a single standalone executable.</p>
+                </div>
+                <dl class="spec">
+                    <div>
+                        <dt>Platform</dt>
+                        <dd>Windows</dd>
+                    </div>
+                    <div>
+                        <dt>Stack</dt>
+                        <dd>C++ · Dear ImGui · DirectX 11</dd>
+                    </div>
+                    <div>
+                        <dt>Storage</dt>
+                        <dd>JSON</dd>
+                    </div>
+                    <div>
+                        <dt>Shortcut</dt>
+                        <dd>AutoHotkey v2</dd>
+                    </div>
+                    <div>
+                        <dt>Distribution</dt>
+                        <dd>Standalone .exe</dd>
+                    </div>
+                </dl>
             </div>
-        </div>
-
-        <div class="section" id="bordr">
-            <div class="container">
-                <div class="wip-tag">Work in progress</div>
-                <div class="bordr-hero">
-                    <h1>Frame it right.<br>Every time.</h2>
-                        <p>Add perfect borders to your photos before posting</p>
-                        <a href="https://bordr.vercel.app" class="btn try-bordr" target="_blank" rel="noopener noreferrer">Try
-                            it out <i class="bi bi-arrow-up-right"></i></a>
+            <div class="p-links"><a class="link" href="#REPO_ARXEION">Source on GitHub →</a><a class="link"
+                    href="#DOWNLOAD_ARXEION">Download →</a></div>
+        </article>
+        <article class="project" id="photo-border">
+            <header class="p-head"><span class="mono muted">[02]</span>
+                <h2>Photo border</h2><span class="mono status">Live</span>
+            </header>
+            <div class="p-body">
+                <div class="p-text">
+                    <p class="lead">Prepares photos for Instagram without letting it crop them: a uniform border, the
+                        right format, and a carousel slicer for wide shots.</p>
+                    <p>Photo border adds a uniform white border to your photos and exports them at 1080 × 1350, the 4:5
+                        portrait format. Border width is set from the interface.</p>
+                    <p>Wide photos can be sliced across 2 to 5 carousel slides, so a panorama becomes one continuous
+                        swipe. Results are exported together as a zip.</p>
+                    <p>It is plain HTML, CSS and JavaScript on the Canvas API, with JSZip for packaging. Images are
+                        processed in your browser and never uploaded, and the page can be hosted statically with no
+                        login.</p>
                 </div>
-                <h2 class="title">Bordr</h2>
-                <h3 class="subtitle">A browser-based tool for adding perfectly consistent borders to your photos before
-                    posting.</h3>
-                <div class="bordr-features">
-                    <div class="feature">
-                        <div class="feature-title subtitle">Consistent borders, always.</div>
-                        <div class="caption">Choose your target aspect ratio and Bordr automatically gives all your
-                            photos the same dimensions, ready to post.</div>
+                <dl class="spec">
+                    <div>
+                        <dt>Stack</dt>
+                        <dd>JavaScript · Canvas API · JSZip</dd>
                     </div>
-                    <div class="feature">
-                        <div class="feature-title subtitle">Multiple ways to crop.</div>
-                        <div class="caption">Add borders around your photos, crop them to fit, or combine both for
-                            complete control over the final result.</div>
+                    <div>
+                        <dt>Output</dt>
+                        <dd>1080 × 1350 (4:5), zip</dd>
                     </div>
-                    <div class="feature">
-                        <div class="feature-title subtitle">Built for photo carousels.</div>
-                        <div class="caption">Slice horizontal photos into perfectly aligned pieces and create seamless
-                            carousel posts in one click.</div>
+                    <div>
+                        <dt>Slides</dt>
+                        <dd>2 to 5 per wide photo</dd>
                     </div>
-                </div>
-                <p class="caption bordr-legal">The source code of Bordr is released under the GPL-3.0 license.</p>
-                <div class="bordr-buttons">
-                    <a href="https://github.com/ie74/bordr" class="btn source-code-btn" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i>Source Code</i></a>
-                    <a href="https://bordr.vercel.app" class="btn try-bordr" target="_blank" rel="noopener noreferrer">Try Bordr <i class="bi bi-arrow-up-right"></i></a>
-                </div>
+                    <div>
+                        <dt>Hosting</dt>
+                        <dd>Static, no login</dd>
+                    </div>
+                    <div>
+                        <dt>Privacy</dt>
+                        <dd>Runs in the browser</dd>
+                    </div>
+                </dl>
             </div>
-        </div>
+            <div class="p-links"><a class="link" href="#LIVE_PHOTOBORDER">Open the tool →</a><a class="link"
+                    href="#REPO_PHOTOBORDER">Source on GitHub →</a></div>
+        </article>
+        <article class="project" id="valorant-tracker">
+            <header class="p-head"><span class="mono muted">[03]</span>
+                <h2>Valorant tracker</h2><span class="mono status wip">In development</span>
+            </header>
+            <div class="p-body">
+                <div class="p-text">
+                    <p class="lead">A Tracker-Network-style stats page, built for a small circle of friends instead of
+                        the public.</p>
+                    <p>The idea is simple: the usefulness of a stats tracker, without the ads. It is for private use
+                        among friends, so it can stay small and focused.</p>
+                    <p>Data comes from the official Riot API: account lookup, match history and game content. A player’s
+                        current rank is derived from the competitive tier recorded in their latest competitive match.
+                    </p>
+                </div>
+                <dl class="spec">
+                    <div>
+                        <dt>Data</dt>
+                        <dd>Riot API</dd>
+                    </div>
+                    <div>
+                        <dt>Endpoints</dt>
+                        <dd>ACCOUNT-V1 · MATCH-V5 · VAL-CONTENT-V1</dd>
+                    </div>
+                    <div>
+                        <dt>Access</dt>
+                        <dd>Private</dd>
+                    </div>
+                    <div>
+                        <dt>Rank</dt>
+                        <dd>From last competitive match</dd>
+                    </div>
+                </dl>
+            </div>
+            <div class="p-links"><a class="link" href="#REPO_VALORANT">Source on GitHub →</a></div>
+        </article>
+        <article class="project" id="lego-tracker">
+            <header class="p-head"><span class="mono muted">[04]</span>
+                <h2>LEGO tracker</h2><span class="mono status wip">In development</span>
+            </header>
+            <div class="p-body">
+                <div class="p-text">
+                    <p class="lead">A web app to catalogue a personal LEGO collection, built as a learning project.</p>
+                    <p>The tracker uses the Rebrickable API for catalogue data and Firebase (Auth and Firestore) for
+                        storage, and is planned for deployment on GitHub Pages. A valuation feature based on BrickLink
+                        market prices is being explored.</p>
+                    <p>The longer-term goal is a physical counterpart: a modular wall of 20 to 50 ESP32-controlled
+                        drawers synced with the tracker. Each drawer is meant to weigh its contents to count parts, show
+                        the count on a 7-segment display, and light up when a search matches, including voice search.
+                    </p>
+                </div>
+                <dl class="spec">
+                    <div>
+                        <dt>Stack</dt>
+                        <dd>HTML · CSS · JavaScript</dd>
+                    </div>
+                    <div>
+                        <dt>Backend</dt>
+                        <dd>Firebase Auth · Firestore</dd>
+                    </div>
+                    <div>
+                        <dt>Data</dt>
+                        <dd>Rebrickable API</dd>
+                    </div>
+                    <div>
+                        <dt>Hardware</dt>
+                        <dd>ESP32 · HX711 · WS2812B · MQTT</dd>
+                    </div>
+                </dl>
+            </div>
+            <div class="p-links"><a class="link" href="#REPO_LEGO">Source on GitHub →</a></div>
+        </article>
     </main>
-
     <footer>
-        <div class="container">
-            <hr>
-            <div class="footer-container">
-                <div class="footer-links">
-                    <ul>
-                        <li><a href="gallery.html">Gallery<i class="bi bi-arrow-up-right"></i></a></li>
-                        <li><a href="projects.html">Projects<i class="bi bi-arrow-up-right"></i></a></li>
-                        <li><a href="about.html">About<i class="bi bi-arrow-up-right"></i></a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="https://github.com/ie74"><i class="bi bi-github"></i>GitHub</a></li>
-                        <li><a href="https://discord.gg"><i class="bi bi-discord"></i>@ie74</a></li>
-                    </ul>
+        <div class="wrap">
+            <div class="foot">
+                <div><a class="brand" href="/">ie74</a>
+                    <p class="muted" style="margin-top:1rem;max-width:36ch">Photography and software, made for the love
+                        of it.</p>
                 </div>
-
-                <div class="footer-license">
-                    The source code of this website is released under the GPL-3.0 license.
-                    Photographs are original works protected under CC BY-NC-ND 4.0.
+                <div>
+                    <h3>Navigate</h3>
+                    <ul>
+                        <li><a href="/pages/gallery.html">Photography</a></li>
+                        <li><a href="/pages/projects.html">Projects</a></li>
+                        <li><a href="/#about">About</a></li>
+                        <li><a href="/#contact">Contact</a></li>
+                    </ul>
                 </div>
             </div>
-            <p class="footer-copyright">© 2026 ie74. All rights reserved.</p>
+            <div class="foot-base mono"><span>&copy; 2026 ie74</span><span>Code GPL-3.0 &middot; Images CC BY-NC-ND
+                    4.0</span><a href="https://github.com/ie74/ie74.github.io">This site is open source &rarr;</a></div>
         </div>
     </footer>
-
-    <script src="../js/script.js"></script>
+    <script src="/js/gallery.js"></script>
 </body>
 
 </html>
