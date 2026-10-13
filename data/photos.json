@@ -3,32 +3,37 @@
     "thumb": "assets/photos/thumb/img_01_thumb.jpg",
     "full": "assets/photos/full/img_01.jpg",
     "width": 600,
-    "height": 800
+    "height": 800,
+    "album": "Street"
   },
   {
     "thumb": "assets/photos/thumb/img_02_thumb.jpg",
     "full": "assets/photos/full/img_02.jpg",
     "width": 600,
-    "height": 800
+    "height": 800,
+    "album": "Street"
   },
   {
     "thumb": "assets/photos/thumb/img_03_thumb.jpg",
     "full": "assets/photos/full/img_03.jpg",
     "width": 600,
-    "height": 800
+    "height": 800,
+    "album": "Street"
   },
   {
     "thumb": "assets/photos/thumb/img_04_thumb.jpg",
     "full": "assets/photos/full/img_04.jpg",
     "width": 600,
-    "height": 800
+    "height": 800,
+    "album": "B&W"
   },
   {
     "thumb": "assets/photos/thumb/DSC_1447_thumb.jpg",
     "full": "assets/photos/full/DSC_1447.jpg",
     "width": 600,
     "height": 398,
-    "caption": ""
+    "caption": "",
+    "album": "Landscape"
   },
   {
     "thumb": "assets/photos/thumb/DSC_1721_thumb.jpg",
@@ -42,63 +47,72 @@
     "full": "assets/photos/full/DSC_1724.jpg",
     "width": 600,
     "height": 398,
-    "caption": ""
+    "caption": "",
+    "album": "Landscape"
   },
   {
     "thumb": "assets/photos/thumb/DSC_1804_thumb.jpg",
     "full": "assets/photos/full/DSC_1804.jpg",
     "width": 600,
     "height": 905,
-    "caption": ""
+    "caption": "",
+    "album": "Landscape"
   },
   {
     "thumb": "assets/photos/thumb/20260421_170552_IMG_2528_thumb.jpg",
     "full": "assets/photos/full/20260421_170552_IMG_2528.jpg",
     "width": 600,
     "height": 399,
-    "caption": ""
+    "caption": "",
+    "album": "B&W"
   },
   {
     "thumb": "assets/photos/thumb/DSC_2029_thumb.jpg",
     "full": "assets/photos/full/DSC_2029.jpg",
     "width": 600,
     "height": 904,
-    "caption": ""
+    "caption": "",
+    "album": "B&W"
   },
   {
     "thumb": "assets/photos/thumb/DSC_2070_thumb.jpg",
     "full": "assets/photos/full/DSC_2070.jpg",
     "width": 600,
     "height": 922,
-    "caption": ""
+    "caption": "",
+    "album": "B&W"
   },
   {
     "thumb": "assets/photos/thumb/DSC_2276_thumb.jpg",
     "full": "assets/photos/full/DSC_2276.jpg",
     "width": 600,
     "height": 800,
-    "caption": ""
+    "caption": "",
+    "album": "Street"
   },
   {
     "thumb": "assets/photos/thumb/DSC_2295_thumb.jpg",
     "full": "assets/photos/full/DSC_2295.jpg",
     "width": 600,
     "height": 899,
-    "caption": ""
+    "caption": "",
+    "album": "Street"
   },
   {
     "thumb": "assets/photos/thumb/DSC_2414_thumb.jpg",
     "full": "assets/photos/full/DSC_2414.jpg",
     "width": 600,
     "height": 400,
-    "caption": ""
+    "caption": "",
+    "album": "Landscape"
   },
   {
     "thumb": "assets/photos/thumb/DSC_2456_thumb.jpg",
     "full": "assets/photos/full/DSC_2456.jpg",
     "width": 600,
     "height": 400,
-    "caption": ""
+    "caption": "",
+    "album": ""
   },
   {
     "thumb": "assets/photos/thumb/DSC_2699_thumb.jpg",
@@ -126,14 +140,16 @@
     "full": "assets/photos/full/DSC_3192.jpg",
     "width": 600,
     "height": 400,
-    "caption": ""
+    "caption": "",
+    "album": "Landscape"
   },
   {
     "thumb": "assets/photos/thumb/DSC_3261_thumb.jpg",
     "full": "assets/photos/full/DSC_3261.jpg",
     "width": 600,
     "height": 800,
-    "caption": ""
+    "caption": "",
+    "album": "B&W"
   },
   {
     "thumb": "assets/photos/thumb/DSC_3390_thumb.jpg",
@@ -154,41 +170,47 @@
     "full": "assets/photos/full/Perugia - Edited (1).JPG",
     "width": 600,
     "height": 800,
-    "caption": ""
+    "caption": "",
+    "album": "B&W"
   },
   {
     "thumb": "assets/photos/thumb/20260421_123157_IMG_2315_thumb.jpg",
     "full": "assets/photos/full/20260421_123157_IMG_2315.jpg",
     "width": 600,
     "height": 901,
-    "caption": ""
+    "caption": "",
+    "album": "Street"
   },
   {
     "thumb": "assets/photos/thumb/20260421_130026_IMG_2359_thumb.jpg",
     "full": "assets/photos/full/20260421_130026_IMG_2359.jpg",
     "width": 600,
     "height": 905,
-    "caption": ""
+    "caption": "",
+    "album": "Street"
   },
   {
     "thumb": "assets/photos/thumb/DSC_1094_thumb.jpg",
     "full": "assets/photos/full/DSC_1094.jpg",
     "width": 600,
     "height": 398,
-    "caption": ""
+    "caption": "",
+    "album": "Street"
   },
   {
     "thumb": "assets/photos/thumb/DSC_1130_thumb.jpg",
     "full": "assets/photos/full/DSC_1130.jpg",
     "width": 600,
     "height": 392,
-    "caption": ""
+    "caption": "",
+    "album": "Street"
   },
   {
     "thumb": "assets/photos/thumb/DSC_1140_thumb.jpg",
     "full": "assets/photos/full/DSC_1140.jpg",
     "width": 600,
     "height": 936,
-    "caption": ""
+    "caption": "",
+    "album": "Street"
   }
 ]

@@ -36,64 +36,20 @@
     <main class="wrap">
         <section class="hero" style="padding-bottom:3rem">
             <h1>Projects</h1>
-            <p>Software built for personal use: tools, trackers and utilities.</p>
+            <p>Software built for utility and personal use.</p>
         </section>
-        <nav class="pindex" aria-label="Projects"><a class="chip" href="#arxeion">Arxeion</a><a class="chip"
-                href="#photo-border">Photo border</a><a class="chip" href="#valorant-tracker">Valorant tracker</a><a
-                class="chip" href="#lego-tracker">LEGO tracker</a></nav>
-        <article class="project" id="arxeion">
+        <nav class="pindex" aria-label="Projects"><a class="chip"
+                href="#bordr">Bordr</a></nav>
+        
+        <article class="project" id="bordr">
             <header class="p-head"><span class="mono muted">[01]</span>
-                <h2>Arxeion</h2><span class="mono status">Released</span>
+                <h2>Bordr</h2><span class="mono status">Live</span>
             </header>
             <div class="p-body">
                 <div class="p-text">
-                    <p class="lead">A Windows launcher that turns the list of installed programs into something you can
-                        actually organise.</p>
-                    <p>Arxeion finds installed applications by scanning the Windows registry and loads their icons
-                        asynchronously, so the interface never waits on them. You can sort apps into categories and hide
-                        the ones you never use.</p>
-                    <p>Two views cover two jobs: a grid for launching, and a management view for categories and hidden
-                        apps. Everything you set up is saved as JSON, and a global shortcut written in AutoHotkey v2
-                        brings the launcher up from anywhere.</p>
-                    <p>The interface is immediate-mode (Dear ImGui) rendered through DirectX 11, and the whole program
-                        ships as a single standalone executable.</p>
-                </div>
-                <dl class="spec">
-                    <div>
-                        <dt>Platform</dt>
-                        <dd>Windows</dd>
-                    </div>
-                    <div>
-                        <dt>Stack</dt>
-                        <dd>C++ · Dear ImGui · DirectX 11</dd>
-                    </div>
-                    <div>
-                        <dt>Storage</dt>
-                        <dd>JSON</dd>
-                    </div>
-                    <div>
-                        <dt>Shortcut</dt>
-                        <dd>AutoHotkey v2</dd>
-                    </div>
-                    <div>
-                        <dt>Distribution</dt>
-                        <dd>Standalone .exe</dd>
-                    </div>
-                </dl>
-            </div>
-            <div class="p-links"><a class="link" href="#REPO_ARXEION">Source on GitHub →</a><a class="link"
-                    href="#DOWNLOAD_ARXEION">Download →</a></div>
-        </article>
-        <article class="project" id="photo-border">
-            <header class="p-head"><span class="mono muted">[02]</span>
-                <h2>Photo border</h2><span class="mono status">Live</span>
-            </header>
-            <div class="p-body">
-                <div class="p-text">
-                    <p class="lead">Prepares photos for Instagram without letting it crop them: a uniform border, the
+                    <p class="lead">Prepares photos for Instagram: a uniform border, the
                         right format, and a carousel slicer for wide shots.</p>
-                    <p>Photo border adds a uniform white border to your photos and exports them at 1080 × 1350, the 4:5
-                        portrait format. Border width is set from the interface.</p>
+                    <p>Bordr adds a uniform white border to your photos and exports them at your preferred ratio. Border width is set from the interface.</p>
                     <p>Wide photos can be sliced across 2 to 5 carousel slides, so a panorama becomes one continuous
                         swipe. Results are exported together as a zip.</p>
                     <p>It is plain HTML, CSS and JavaScript on the Canvas API, with JSZip for packaging. Images are
@@ -107,7 +63,7 @@
                     </div>
                     <div>
                         <dt>Output</dt>
-                        <dd>1080 × 1350 (4:5), zip</dd>
+                        <dd>Variable (1:1, 4:5, 3:4, 16:9), zip</dd>
                     </div>
                     <div>
                         <dt>Slides</dt>
@@ -123,79 +79,8 @@
                     </div>
                 </dl>
             </div>
-            <div class="p-links"><a class="link" href="#LIVE_PHOTOBORDER">Open the tool →</a><a class="link"
-                    href="#REPO_PHOTOBORDER">Source on GitHub →</a></div>
-        </article>
-        <article class="project" id="valorant-tracker">
-            <header class="p-head"><span class="mono muted">[03]</span>
-                <h2>Valorant tracker</h2><span class="mono status wip">In development</span>
-            </header>
-            <div class="p-body">
-                <div class="p-text">
-                    <p class="lead">A Tracker-Network-style stats page, built for a small circle of friends instead of
-                        the public.</p>
-                    <p>The idea is simple: the usefulness of a stats tracker, without the ads. It is for private use
-                        among friends, so it can stay small and focused.</p>
-                    <p>Data comes from the official Riot API: account lookup, match history and game content. A player’s
-                        current rank is derived from the competitive tier recorded in their latest competitive match.
-                    </p>
-                </div>
-                <dl class="spec">
-                    <div>
-                        <dt>Data</dt>
-                        <dd>Riot API</dd>
-                    </div>
-                    <div>
-                        <dt>Endpoints</dt>
-                        <dd>ACCOUNT-V1 · MATCH-V5 · VAL-CONTENT-V1</dd>
-                    </div>
-                    <div>
-                        <dt>Access</dt>
-                        <dd>Private</dd>
-                    </div>
-                    <div>
-                        <dt>Rank</dt>
-                        <dd>From last competitive match</dd>
-                    </div>
-                </dl>
-            </div>
-            <div class="p-links"><a class="link" href="#REPO_VALORANT">Source on GitHub →</a></div>
-        </article>
-        <article class="project" id="lego-tracker">
-            <header class="p-head"><span class="mono muted">[04]</span>
-                <h2>LEGO tracker</h2><span class="mono status wip">In development</span>
-            </header>
-            <div class="p-body">
-                <div class="p-text">
-                    <p class="lead">A web app to catalogue a personal LEGO collection, built as a learning project.</p>
-                    <p>The tracker uses the Rebrickable API for catalogue data and Firebase (Auth and Firestore) for
-                        storage, and is planned for deployment on GitHub Pages. A valuation feature based on BrickLink
-                        market prices is being explored.</p>
-                    <p>The longer-term goal is a physical counterpart: a modular wall of 20 to 50 ESP32-controlled
-                        drawers synced with the tracker. Each drawer is meant to weigh its contents to count parts, show
-                        the count on a 7-segment display, and light up when a search matches, including voice search.
-                    </p>
-                </div>
-                <dl class="spec">
-                    <div>
-                        <dt>Stack</dt>
-                        <dd>HTML · CSS · JavaScript</dd>
-                    </div>
-                    <div>
-                        <dt>Backend</dt>
-                        <dd>Firebase Auth · Firestore</dd>
-                    </div>
-                    <div>
-                        <dt>Data</dt>
-                        <dd>Rebrickable API</dd>
-                    </div>
-                    <div>
-                        <dt>Hardware</dt>
-                        <dd>ESP32 · HX711 · WS2812B · MQTT</dd>
-                    </div>
-                </dl>
-            </div>
-            <div class="p-links"><a class="link" href="#REPO_LEGO">Source on GitHub →</a></div>
+            <div class="p-links"><a class="link" href="https://bordr.vercel.app">Open the tool →</a><a class="link"
+                    href="https://github.com/ie74//bordr">Source on GitHub →</a></div>
         </article>
     </main>
     <footer>
