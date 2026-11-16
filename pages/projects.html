@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Projects — ie74</title>
+    <title>Projects | ie74</title>
     <meta name="description" content="Software projects by ie74: tools, trackers and utilities.">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="ie74">
@@ -39,7 +39,8 @@
             <p>Software built for utility and personal use.</p>
         </section>
         <nav class="pindex" aria-label="Projects"><a class="chip"
-                href="#bordr">Bordr</a></nav>
+                href="#bordr">Bordr</a><a class="chip"
+                href="#red-odyssey">Red Odyssey</a></nav>
         
         <article class="project" id="bordr">
             <header class="p-head"><span class="mono muted">[01]</span>
@@ -82,6 +83,48 @@
             <div class="p-links"><a class="link" href="https://bordr.vercel.app">Open the tool →</a><a class="link"
                     href="https://github.com/ie74//bordr">Source on GitHub →</a></div>
         </article>
+
+        <article class="project" id="red-odyssey">
+            <header class="p-head"><span class="mono muted">[02]</span>
+                <h2>Red Odyssey</h2><span class="mono status">Completed</span>
+            </header>
+            <div class="p-body">
+                <div class="p-text">
+                    <p class="lead">Martian terrain exploration and pathfinding web app developed for the NASA Space Apps Challenge, calculating slope-aware routes across Jezero Crater.</p>
+                    <p>Built around a 20 m/pixel Digital Elevation Model (DEM) and 5 m/pixel CTX orbital imagery from USGS Astrogeology, the app combines five geospatial layers: orbital imagery with multidirectional hillshade, elevation data, 200-metre contour lines, scientific reference sites, and a derived slope map.</p>
+                    <p>To plan a path, the user selects a starting point and destination directly on the map, with the option to place up to 8 intermediate waypoints and reorder stops. The backend evaluates elevation change and terrain steepness to calculate route cost, producing smoothed multi-point trajectories across the crater.</p>
+                    <p>Developed in a team of six. I worked on the Python backend, designing the pathfinding and slope-aware path cost algorithms.</p>
+                </div>
+                <dl class="spec">
+                    <div>
+                        <dt>Stack</dt>
+                        <dd>OpenLayers · Vite · FastAPI · Python</dd>
+                    </div>
+                    <div>
+                        <dt>Context</dt>
+                        <dd>NASA Space Apps Challenge</dd>
+                    </div>
+                    <div>
+                        <dt>Data</dt>
+                        <dd>CTX DEM &amp; Orthomosaic (USGS)</dd>
+                    </div>
+                    <div>
+                        <dt>Area</dt>
+                        <dd>Jezero Crater, Mars</dd>
+                    </div>
+                    <div>
+                        <dt>Role</dt>
+                        <dd>Pathfinding &amp; cost algorithms</dd>
+                    </div>
+                    <div>
+                        <dt>Team</dt>
+                        <dd>6 contributors</dd>
+                    </div>
+                </dl>
+            </div>
+            <div class="p-links"><a class="link" href="https://red-odyssey-web.vercel.app/project.html">Open the project →</a><a class="link"
+                    href="https://github.com/nczeta/red-odyssey">Team repository on GitHub →</a></div>
+        </article>
     </main>
     <footer>
         <div class="wrap">
@@ -104,7 +147,7 @@
                     4.0</span><a href="https://github.com/ie74/ie74.github.io">This site is open source &rarr;</a></div>
         </div>
     </footer>
-    <script src="/js/gallery.js"></script>
+    <script src="/js/gallery.js?v=2"></script>
 </body>
 
 </html>

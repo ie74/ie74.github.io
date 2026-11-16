@@ -4,7 +4,15 @@ const abs = s => /^(\/|https?:)/.test(s) ? s : '/' + s;   // path root-anchored:
 
 async function initGallery(grid) {
 	let photos = await (await fetch(grid.dataset.src)).json();
-	if (+grid.dataset.limit) photos = photos.slice(0, +grid.dataset.limit);
+	const limit = +grid.dataset.limit;
+	if (limit > 0) photos = photos.slice(-limit).reverse();
+
+	const layout = () => {
+		const gap = parseFloat(getComputedStyle(grid).columnGap);       // stesso gap in orizzontale e in verticale
+		const tiles = [...grid.querySelectorAll('.tile:not([hidden])')];
+		const hs = tiles.map(t => t.firstElementChild.getBoundingClientRect().height); // prima leggo tutto...
+		tiles.forEach((t, i) => { t.style.gridRowEnd = `span ${Math.ceil(hs[i] + gap)}`; }); // ...poi scrivo
+	};
 
 	photos.forEach((p, i) => {
 		const t = document.createElement('button');
@@ -13,16 +21,11 @@ async function initGallery(grid) {
 		t.dataset.ratio = p.height / p.width;       // NOMI CAMPI DA VERIFICARE col tuo photos.json
 		t._full = abs(p.full);
 		t.classList.add('reveal'); t.style.setProperty('--d', (i % 8) * 40 + 'ms'); io.observe(t);
-		t.innerHTML = `<img src="${abs(p.thumb)}" width="${p.width}" height="${p.height}" loading="lazy" alt="Photograph ${i + 1}">`;
+		t.innerHTML = `<img src="${abs(p.thumb)}" width="${p.width}" height="${p.height}" style="aspect-ratio:${p.width}/${p.height}" loading="lazy" alt="Photograph ${i + 1}">`;
+		t.querySelector('img').addEventListener('load', layout);
 		grid.append(t);
 	});
 
-	const layout = () => {
-		const gap = parseFloat(getComputedStyle(grid).columnGap);       // stesso gap in orizzontale e in verticale
-		const tiles = [...grid.querySelectorAll('.tile:not([hidden])')];
-		const hs = tiles.map(t => t.firstElementChild.getBoundingClientRect().height); // prima leggo tutto...
-		tiles.forEach((t, i) => { t.style.gridRowEnd = `span ${Math.ceil(hs[i] + gap)}`; }); // ...poi scrivo
-	};
 	layout();
 	new ResizeObserver(layout).observe(grid);
 
